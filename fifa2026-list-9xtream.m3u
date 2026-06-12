@@ -1,0 +1,23 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="tnt.sports.argentina.ar" tvg-name="TNT Sports Argentina" tvg-logo="" group-title="TNT Sports",TNT Sports Argentina en vivo por internet
+https://bgvnzw5k.fubo18.com/tntsports/mono.m3u8?token=074dc682016569c543e8efee6e1c53f81651c4c3-b4-1781301546-1781283546
+#EXTINF:-1 tvg-id="espn.premium.argentina.ar" tvg-name="ESPN Premium Argentina" tvg-logo="" group-title="ESPN",ESPN Premium Argentina en vivo por internet
+https://yxdlc29tzq.fubo18.com/espnpremium/mono.m3u8?token=e997641205a7029baa241f8de8952d2492406dd5-20-1781301393-1781283393
+#EXTINF:-1 tvg-id="tyc.sports.argentina.ar" tvg-name="TyC Sports Argentina" tvg-logo="" group-title="TyC Sports",TyC Sports Argentina en vivo por internet
+https://cgxheq.fubo18.com/tycsports/mono.m3u8?token=0d8bea942c5b21652e4bd5e6fa08d9491546c7b6-f4-1781301715-1781283715
+#EXTINF:-1 tvg-id="directv.sports.argentina.ar" tvg-name="DirecTV Sports Argentina" tvg-logo="" group-title="DirecTV Sports",DirecTV Sports Argentina en vivo por internet
+https://bgvnzw5k.fubo18.com/dsports/mono.m3u8?token=3684d1cd5f9337f97b59e2384e7533150e66e6de-e9-1781301827-1781283827
+#EXTINF:-1 tvg-id="directv.sports.2.argentina.ar" tvg-name="DirecTV Sports 2 Argentina" tvg-logo="" group-title="DirecTV Sports",DirecTV Sports 2 Argentina en vivo por internet
+https://cgxheq.fubo18.com/dsports2/mono.m3u8?token=d8b947287816fbae3c4073bc4bb612490c398992-2-1781310408-1781292408
+#EXTINF:-1 tvg-id="directv.sports.argentina.ar" tvg-name="DirecTV Sports + Argentina" tvg-logo="" group-title="DirecTV Sports",DirecTV Sports + Argentina en vivo por internet
+https://dglvz29s.fubo18.com/dsportsplus/mono.m3u8?token=14a027564684daca1a60a4e15328bef9369be0c2-62-1781310507-1781292507
+#EXTINF:-1 tvg-id="espn.1.argentina.ar" tvg-name="ESPN 1 Argentina" tvg-logo="" group-title="ESPN",ESPN 1 Argentina en vivo por internet
+https://tyg2mnl9.fubo18.com/espn/mono.m3u8?token=e4e73af0357bafa39458560220bb5ee8f9b07e70-c7-1781310621-1781292621
+#EXTINF:-1 tvg-id="espn.2.argentina.ar" tvg-name="ESPN 2 Argentina" tvg-logo="" group-title="ESPN",ESPN 2 Argentina en vivo por internet
+https://agvyby.fubo18.com/espn2/mono.m3u8?token=df1da9ba619eb1270870c48021bb63d1f411b507-65-1781310684-1781292684
+#EXTINF:-1 tvg-id="espn.3.argentina.ar" tvg-name="ESPN 3 (Argentina)" tvg-logo="" group-title="ESPN",ESPN 3 (Argentina) en vivo por internet
+https://yxdlc29tzq.fubo18.com/espn3/mono.m3u8?token=bb3e618ee765ada03a59d63dce2e852adc95d6a0-6f-1781310744-1781292744
+#EXTINF:-1 tvg-id="fox.sports.2.argentina.ar" tvg-name="Fox Sports 2 Argentina" tvg-logo="" group-title="Fox Sports",Fox Sports 2 Argentina en vivo por internet
+https://am91cm5leq.fubo18.com/foxsports2/mono.m3u8?token=745f4cf36412ba32e1690246e7e5f5f2e2e86859-44-1781310808-1781292808
+#EXTINF:-1 tvg-id="fox.sports.3.argentina.ar" tvg-name="Fox Sports 3 Argentina" tvg-logo="" group-title="Fox Sports",Fox Sports 3 Argentina en vivo por internet
+https://bmf0aw9u.fubo18.com/foxsports3/mono.m3u8?token=38ee7cd6c1693ebf9e6c8515aa50aaa19fcbf1c6-e5-1781310859-1781292859
