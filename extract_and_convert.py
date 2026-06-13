@@ -25,6 +25,8 @@ import requests
 
 STATUS_JSON_URL = "https://la18hd.com/status.json"
 BASE_URL = "https://la18hd.com"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+REFERER_URL = "https://la18hd.com/"
 
 
 # ── helpers ──────────────────────────────────────────────────────────
@@ -36,8 +38,8 @@ def extract_playback_url(html: str) -> str | None:
 
 def fetch_playback(channel_url: str, channel_name: str) -> str | None:
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Referer": "https://la18hd.com/",
+        "User-Agent": USER_AGENT,
+        "Referer": REFERER_URL,
     }
     try:
         resp = requests.get(channel_url, headers=headers, timeout=30)
@@ -65,6 +67,13 @@ def make_9xtream_extinf(name: str, tvg_id: str, tvg_name: str, group: str) -> st
     return (
         f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" '
         f'tvg-logo="" group-title="{group}",{name}'
+    )
+
+
+def make_vlcopts() -> str:
+    return (
+        f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n"
+        f"#EXTVLCOPT:http-referrer={REFERER_URL}\n"
     )
 
 
@@ -105,7 +114,7 @@ def discover_channels() -> list[dict]:
     """Fetch status.json and return a list of {name, url, region, status}."""
     print(f"  Fetching channel list from {STATUS_JSON_URL} ...", file=sys.stderr)
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "User-Agent": USER_AGENT,
     }
     resp = requests.get(STATUS_JSON_URL, headers=headers, timeout=30)
     resp.raise_for_status()
@@ -225,14 +234,14 @@ def main():
         success += 1
 
         # Simple format
-        simple_lines.append(f"{make_simple_extinf(name)}\n{playback}\n")
+        simple_lines.append(f"{make_simple_extinf(name)}\n{make_vlcopts()}{playback}\n")
 
         # Extended 9Xtream format
         group = extract_brand(name) if region == "Custom" else region
         groups_seen.add(group)
         tvg_id = generate_tvg_id(name, region)
         extinf = make_9xtream_extinf(name, tvg_id, name, group)
-        ext_lines.append(f"{extinf}\n{playback}\n")
+        ext_lines.append(f"{extinf}\n{make_vlcopts()}{playback}\n")
 
     # ── derive extended filename ──────────────────────────────────
     out_path = Path(args.output)
