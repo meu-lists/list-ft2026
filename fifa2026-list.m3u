@@ -1,101 +1,91 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="espn.latinoamerica" tvg-name="ESPN" tvg-logo="" group-title="LATINOAMERICA",ESPN
-https://cgxheq.fubo18.com/espn/mono.m3u8?token=99c07eb388a77eea4db1ebcb49499b8387f5e670-75-1781357866-1781339866
-#EXTINF:-1 tvg-id="espn.2.latinoamerica" tvg-name="ESPN 2" tvg-logo="" group-title="LATINOAMERICA",ESPN 2
-https://am91cm5leQ.fubo18.com/espn2/mono.m3u8?token=e3616b480b6dc8f489a9211287c339ff73270ff9-7c-1781357867-1781339867
-#EXTINF:-1 tvg-id="espn.3.latinoamerica" tvg-name="ESPN 3" tvg-logo="" group-title="LATINOAMERICA",ESPN 3
-https://c2f2zq.fubo18.com/espn3/mono.m3u8?token=09805c371897a79eb7f217338e1de507d02462e9-da-1781357869-1781339869
-#EXTINF:-1 tvg-id="espn.4.latinoamerica" tvg-name="ESPN 4" tvg-logo="" group-title="LATINOAMERICA",ESPN 4
-https://aw1wcm92zq.fubo18.com/espn4/mono.m3u8?token=0881ac18b7f6f85b1d8237d673c9cb03e155cc4b-e3-1781357870-1781339870
-#EXTINF:-1 tvg-id="espn.5.latinoamerica" tvg-name="ESPN 5" tvg-logo="" group-title="LATINOAMERICA",ESPN 5
-https://tyg2mnl9.fubo18.com/espn5/mono.m3u8?token=cefb417baf5508923bd8118047540b4db050fedb-8a-1781357871-1781339871
-#EXTINF:-1 tvg-id="espn.6.latinoamerica" tvg-name="ESPN 6" tvg-logo="" group-title="LATINOAMERICA",ESPN 6
-https://eWVz.fubo18.com/espn6/mono.m3u8?token=67b05c5b7476369a9cc2b76aa0adb65ada31ee24-2b-1781357872-1781339872
-#EXTINF:-1 tvg-id="espn.7.latinoamerica" tvg-name="ESPN 7" tvg-logo="" group-title="LATINOAMERICA",ESPN 7
-https://wp9xqedt.fubo18.com/espn7/mono.m3u8?token=bb5803899eaff03e2a722f6ab5a151f00d9c57d4-c6-1781357873-1781339873
-#EXTINF:-1 tvg-id="dsports.latinoamerica" tvg-name="DSports" tvg-logo="" group-title="LATINOAMERICA",DSports
-https://b2ZmaWNpYWw.fubo18.com/dsports/mono.m3u8?token=0bd5b7466b0aff5e766c2bd129310d29467028cf-6e-1781357874-1781339874
-#EXTINF:-1 tvg-id="dsports.2.latinoamerica" tvg-name="DSports 2" tvg-logo="" group-title="LATINOAMERICA",DSports 2
-https://a2lja3m.fubo18.com/dsports2/mono.m3u8?token=ae9b68dfe38e1b4db7aef31164862293da3635d6-6e-1781357875-1781339875
-#EXTINF:-1 tvg-id="dsports.plus.latinoamerica" tvg-name="DSports Plus" tvg-logo="" group-title="LATINOAMERICA",DSports Plus
-https://ag9wzq.fubo18.com/dsportsplus/mono.m3u8?token=de05acc88beea8ea29e9caf1257f61a42a10f22e-ef-1781357876-1781339876
-#EXTINF:-1 tvg-id="goltv.latinoamerica" tvg-name="GOLTV" tvg-logo="" group-title="LATINOAMERICA",GOLTV
-https://a2vlca.fubo18.com/goltv/mono.m3u8?token=b19f3b67fbfa233928e24e47a8930bf6d993a216-4d-1781357878-1781339878
-#EXTINF:-1 tvg-id="vtv.plus.latinoamerica" tvg-name="VTV Plus" tvg-logo="" group-title="LATINOAMERICA",VTV Plus
-https://c2f2zq.fubo18.com/vtvplus/mono.m3u8?token=1f667517e9a86b4738e307c21028fc12316cf7b0-d3-1781357879-1781339879
-#EXTINF:-1 tvg-id="ecdf.ligapro.eventos.latinoamerica" tvg-name="ECDF LigaPro (eventos)" tvg-logo="" group-title="LATINOAMERICA",ECDF LigaPro (eventos)
-https://agvyby.fubo18.com/ecdf_ligapro/mono.m3u8?token=7d16a53ac8bc063dee41e57313576fe5cb85effb-a8-1781357880-1781339880
-#EXTINF:-1 tvg-id="fox.sports.argentina" tvg-name="Fox Sports" tvg-logo="" group-title="ARGENTINA",Fox Sports
-https://anvtcax.fubo18.com/foxsports/mono.m3u8?token=d5a3fc6a39afb1ccfc6858775a4d4edb3f7baa95-4c-1781357881-1781339881
-#EXTINF:-1 tvg-id="fox.sports.2.argentina" tvg-name="Fox Sports 2" tvg-logo="" group-title="ARGENTINA",Fox Sports 2
-https://anvtcax.fubo18.com/foxsports2/mono.m3u8?token=33c57092cccaed1486fce1f7949b7e99744f46f5-ae-1781357882-1781339882
-#EXTINF:-1 tvg-id="fox.sports.3.argentina" tvg-name="Fox Sports 3" tvg-logo="" group-title="ARGENTINA",Fox Sports 3
-https://YXdlc29tZQ.fubo18.com/foxsports3/mono.m3u8?token=a9293b90bffaeb0cf33f9d2a63b9e4a13f3bddd1-4c-1781357883-1781339883
-#EXTINF:-1 tvg-id="tnt.sports.argentina" tvg-name="TNT Sports" tvg-logo="" group-title="ARGENTINA",TNT Sports
-https://aw1wcm92zq.fubo18.com/tntsports/mono.m3u8?token=cdc95f4a3601421e85f82e951436a87e75eb15d4-cb-1781357884-1781339884
-#EXTINF:-1 tvg-id="espn.premium.argentina" tvg-name="ESPN Premium" tvg-logo="" group-title="ARGENTINA",ESPN Premium
-https://cgxheq.fubo18.com/espnpremium/mono.m3u8?token=750bcfdc95c0de869f9c487f125c80bea0116fc8-cc-1781357885-1781339885
-#EXTINF:-1 tvg-id="tyc.sports.argentina" tvg-name="TyC Sports" tvg-logo="" group-title="ARGENTINA",TyC Sports
-https://YXdlc29tZQ.fubo18.com/tycsports/mono.m3u8?token=6549915c2485b90b22b175b6281683cf7fcdafe2-42-1781357887-1781339887
-#EXTINF:-1 tvg-id="telefe.argentina" tvg-name="Telefe" tvg-logo="" group-title="ARGENTINA",Telefe
-https://dglvz29s.fubo18.com/telefe/mono.m3u8?token=3b4eb5a78f36d4259e824fbc5e1308b08e8d082b-92-1781357888-1781339888
-#EXTINF:-1 tvg-id="liga1.max.perú" tvg-name="Liga1 MAX" tvg-logo="" group-title="PERÚ",Liga1 MAX
-https://cgxheq.fubo18.com/liga1max/mono.m3u8?token=a72f02c82a50493140845f9eb8e7007fed1486bd-74-1781357889-1781339889
-#EXTINF:-1 tvg-id="movistar.deportes.perú" tvg-name="Movistar Deportes" tvg-logo="" group-title="PERÚ",Movistar Deportes
-https://c2f2zq.fubo18.com/movistar/mono.m3u8?token=205e1084e632bbbc549adc144bf5b83076fc7490-af-1781357890-1781339890
-#EXTINF:-1 tvg-id="win.sports.plus.colombia" tvg-name="Win Sports Plus" tvg-logo="" group-title="COLOMBIA",Win Sports Plus
-https://a2lja3m.fubo18.com/winsportsplus/mono.m3u8?token=74c2d3b3621c6c77256d165675ecd3a2b792893c-20-1781357891-1781339891
-#EXTINF:-1 tvg-id="win.sports.plus.2.colombia" tvg-name="Win Sports plus (2)" tvg-logo="" group-title="COLOMBIA",Win Sports plus (2)
-https://wp9xqedt.fubo18.com/winsports2/mono.m3u8?token=aa57da311e3428b6f2cf7f29291440e61a9b5dc5-2d-1781357892-1781339892
-#EXTINF:-1 tvg-id="win.sports.colombia" tvg-name="Win Sports" tvg-logo="" group-title="COLOMBIA",Win Sports
-https://wp9xqedt.fubo18.com/winsports/mono.m3u8?token=07b487febcfc1f6ab7f8f65b9f455fa3be9a7424-70-1781357893-1781339893
-#EXTINF:-1 tvg-id="tudn.méxico" tvg-name="TUDN" tvg-logo="" group-title="MÉXICO",TUDN
-https://x4bnd7lq.fubo18.com/tudn_mx/mono.m3u8?token=e109b4935a7881a5b296492125e7cacc8394fd12-70-1781357895-1781339895
-#EXTINF:-1 tvg-id="canal.5.méxico" tvg-name="Canal 5" tvg-logo="" group-title="MÉXICO",Canal 5
-https://ag9wzq.fubo18.com/canal5/mono.m3u8?token=e610059cc69289b546c2fa7a83ba18d245e61f46-c0-1781357896-1781339896
-#EXTINF:-1 tvg-id="tvc.deportes.méxico" tvg-name="TVC Deportes" tvg-logo="" group-title="MÉXICO",TVC Deportes
-https://agvyby.fubo18.com/tvc_deportes/mono.m3u8?token=4504b2f7abc9ac8b7a05364f9f37e42b94a11929-ce-1781357897-1781339897
-#EXTINF:-1 tvg-id="sky.sports.laliga.méxico" tvg-name="Sky Sports LaLiga" tvg-logo="" group-title="MÉXICO",Sky Sports LaLiga
-https://wp9xqedt.fubo18.com/sky_sports_laliga/mono.m3u8?token=423525b2f003bcc7b6938944b69a1b3cbe89d61b-15-1781357898-1781339898
-#EXTINF:-1 tvg-id="fox.deportes.usa" tvg-name="Fox Deportes" tvg-logo="" group-title="USA",Fox Deportes
-https://c2nvdxq.fubo18.com/foxdeportes/mono.m3u8?token=a70c5098fd3a95044ed39cc8dda72f8a84e3bc18-87-1781357899-1781339899
-#EXTINF:-1 tvg-id="espn.deportes.usa" tvg-name="ESPN Deportes" tvg-logo="" group-title="USA",ESPN Deportes
-https://wp9xqedt.fubo18.com/espndeportes/mono.m3u8?token=966a1b6f5240da41c89e77fd48c41ff7b5fffeb6-44-1781357900-1781339900
-#EXTINF:-1 tvg-id="tudn.usa" tvg-name="TUDN" tvg-logo="" group-title="USA",TUDN
-https://eWVz.fubo18.com/tudn/mono.m3u8?token=0db5c640d76bef0c4e1addc6ba441508c885c427-e0-1781357901-1781339901
-#EXTINF:-1 tvg-id="univisi.n.usa" tvg-name="Univisión" tvg-logo="" group-title="USA",Univisión
-https://anvtcax.fubo18.com/univision/mono.m3u8?token=121596bf330cc4e65e95f9116db37ff0ef6cf823-29-1781357902-1781339902
-#EXTINF:-1 tvg-id="fox.sports.1.usa" tvg-name="Fox Sports 1" tvg-logo="" group-title="USA",Fox Sports 1
-https://c2nvdxq.fubo18.com/foxsports1_usa/mono.m3u8?token=0177126e61c29abbc74e34302f6071d55621669c-2a-1781357904-1781339904
-#EXTINF:-1 tvg-id="fox.sports.2.usa" tvg-name="Fox Sports 2" tvg-logo="" group-title="USA",Fox Sports 2
-https://aw1wcm92zq.fubo18.com/foxsports2_usa/mono.m3u8?token=37b1876d6a7b718fa87778bbce61f5496d4cd8ae-50-1781357905-1781339905
-#EXTINF:-1 tvg-id="bein.sports.espa.ol.usa" tvg-name="BeIN Sports Español" tvg-logo="" group-title="USA",BeIN Sports Español
-https://a2vlca.fubo18.com/beinsportes/mono.m3u8?token=6af9e949683a6f2cbff997b4903d28904ecd4077-3d-1781357906-1781339906
-#EXTINF:-1 tvg-id="unim.s.usa" tvg-name="Unimás" tvg-logo="" group-title="USA",Unimás
-https://y2fzdgxl.fubo18.com/unimas/mono.m3u8?token=a55171c287e6794de711623bca56792e2fbb7a11-8d-1781357907-1781339907
-#EXTINF:-1 tvg-id="premiere.1.brasil" tvg-name="Premiere 1" tvg-logo="" group-title="BRASIL",Premiere 1
-https://c2f2zq.fubo18.com/premiere1/mono.m3u8?token=964e0fafb4ac941f764842fdf1856d714570a9c9-16-1781357908-1781339908
-#EXTINF:-1 tvg-id="premiere.2.brasil" tvg-name="Premiere 2" tvg-logo="" group-title="BRASIL",Premiere 2
-https://bGFuZQ.fubo18.com/premiere2/mono.m3u8?token=29f67ec152388ec779cf3b426ea621a62e4cacf9-90-1781357909-1781339909
-#EXTINF:-1 tvg-id="premiere.3.brasil" tvg-name="Premiere 3" tvg-logo="" group-title="BRASIL",Premiere 3
-https://tyg2mnl9.fubo18.com/premiere3/mono.m3u8?token=4b7738fc6f3a0831ac3732611156afc5a200af84-4d-1781357910-1781339910
-#EXTINF:-1 tvg-id="premiere.4.brasil" tvg-name="Premiere 4" tvg-logo="" group-title="BRASIL",Premiere 4
-https://agvyby.fubo18.com/premiere4/mono.m3u8?token=c07b894967804481ecc42a6e76ef984f15e6b3f2-b8-1781357912-1781339912
-#EXTINF:-1 tvg-id="premiere.5.brasil" tvg-name="Premiere 5" tvg-logo="" group-title="BRASIL",Premiere 5
-https://agvyby.fubo18.com/premiere5/mono.m3u8?token=d5d059a3bf4e898b3eaf12ca7cc28702d5339d4d-9f-1781357913-1781339913
-#EXTINF:-1 tvg-id="premiere.6.brasil" tvg-name="Premiere 6" tvg-logo="" group-title="BRASIL",Premiere 6
-https://rm8zcvk3.fubo18.com/premiere6/mono.m3u8?token=305640568515bf91da4aaf1b8ad2e8dff92ab571-35-1781357914-1781339914
-#EXTINF:-1 tvg-id="premiere.7.brasil" tvg-name="Premiere 7" tvg-logo="" group-title="BRASIL",Premiere 7
-https://eWVz.fubo18.com/premiere7/mono.m3u8?token=2fb2547d4522d9c126cb158da81b19110aa66a21-e4-1781357915-1781339915
-#EXTINF:-1 tvg-id="sportv.brasil" tvg-name="Sportv" tvg-logo="" group-title="BRASIL",Sportv
-https://rm8zcvk3.fubo18.com/sportv/mono.m3u8?token=54b4d6a9cd7c0399a6e1328295aacbed2fff0093-44-1781357916-1781339916
-#EXTINF:-1 tvg-id="sportv.2.brasil" tvg-name="Sportv 2" tvg-logo="" group-title="BRASIL",Sportv 2
-https://c2nvdxq.fubo18.com/sportv2/mono.m3u8?token=8421ed675127151552ee046a55a82e51c358eeba-dd-1781357917-1781339917
-#EXTINF:-1 tvg-id="sportv.3.brasil" tvg-name="Sportv 3" tvg-logo="" group-title="BRASIL",Sportv 3
-https://anvtcax.fubo18.com/sportv3/mono.m3u8?token=591f8f7ec139477b642bc71e2a85b33f67c41b97-cf-1781357918-1781339918
-#EXTINF:-1 tvg-id="dazn.1.españa" tvg-name="DAZN 1" tvg-logo="" group-title="ESPAÑA",DAZN 1
-https://a2lja3m.fubo18.com/dazn1/mono.m3u8?token=0e34733368b2c102ca968526587c6f8d9b245647-e8-1781357919-1781339919
-#EXTINF:-1 tvg-id="liga.de.campeones.2.españa" tvg-name="Liga de Campeones 2" tvg-logo="" group-title="ESPAÑA",Liga de Campeones 2
-https://agvyby.fubo18.com/ligadecampeones2/mono.m3u8?token=b5706dde33592440821c1e9762fa0a674789bba6-9d-1781357921-1781339921
-#EXTINF:-1 tvg-id="laligatv.bar.españa" tvg-name="LaLigaTV BAR" tvg-logo="" group-title="ESPAÑA",LaLigaTV BAR
-https://tyg2mnl9.fubo18.com/laligatvbar/mono.m3u8?token=3d997e7613fd013de0e08bac2f4739db7584d02b-e4-1781357922-1781339922
+#EXTINF:-1,ESPN
+https://bGFuZQ.fubo18.com/espn/mono.m3u8?token=d192f6ba487e3994fa88a5de7c732c71304146ab-78-1781358223-1781340223
+#EXTINF:-1,ESPN 2
+https://a2lja3m.fubo18.com/espn2/mono.m3u8?token=083dd8ec4a2666706b24ce1d8ced19b17b8fb7fb-77-1781358224-1781340224
+#EXTINF:-1,ESPN 3
+https://aw1wcm92zq.fubo18.com/espn3/mono.m3u8?token=ad27830b370839d9b0c791354b1e55ac13c64eb0-df-1781358225-1781340225
+#EXTINF:-1,ESPN 4
+https://dw5pdgvk.fubo18.com/espn4/mono.m3u8?token=2b195d56fda20caf65738c87b694fa908b577402-2e-1781358226-1781340226
+#EXTINF:-1,ESPN 5
+https://cgxheq.fubo18.com/espn5/mono.m3u8?token=3baba72998ad752bad810f64f1bfd9c396898170-d0-1781358227-1781340227
+#EXTINF:-1,ESPN 6
+https://c2nvdxq.fubo18.com/espn6/mono.m3u8?token=541df9614cfc2e1dedc271d0e43c85fd069a760a-5f-1781358228-1781340228
+#EXTINF:-1,ESPN 7
+https://bGFuZQ.fubo18.com/espn7/mono.m3u8?token=75a1b8f3f9c06ca4a014b46b688a517d42793b89-6f-1781358230-1781340230
+#EXTINF:-1,DSports
+https://c2f2zq.fubo18.com/dsports/mono.m3u8?token=775a65410560a085347cc954d1a059549af8e5af-e1-1781358231-1781340231
+#EXTINF:-1,GOLTV
+https://a2vlca.fubo18.com/goltv/mono.m3u8?token=6e1c78806e60086760799adb7f0417428a5402e7-b9-1781358232-1781340232
+#EXTINF:-1,VTV Plus
+https://c2f2zq.fubo18.com/vtvplus/mono.m3u8?token=3889883fdce7513636a37ace3badb415f8feebbd-57-1781358233-1781340233
+#EXTINF:-1,ECDF LigaPro (eventos)
+https://eWVz.fubo18.com/ecdf_ligapro/mono.m3u8?token=7bd0abbf91405253f62d287c2d3cc1eb4be01aaa-8c-1781358234-1781340234
+#EXTINF:-1,Fox Sports 2
+https://x4bnd7lq.fubo18.com/foxsports2/mono.m3u8?token=ad0b6599d2175a9e32f3a8ce2b63766b7126ae2c-74-1781358235-1781340235
+#EXTINF:-1,Fox Sports 3
+https://bmf0aw9u.fubo18.com/foxsports3/mono.m3u8?token=82a2b5344fe1a0fa57c2e3e788f485cfc48c32c9-25-1781358236-1781340236
+#EXTINF:-1,TNT Sports
+https://eWVz.fubo18.com/tntsports/mono.m3u8?token=6938885c9834f614ab8e087ee1af3268b50725d6-cf-1781358238-1781340238
+#EXTINF:-1,ESPN Premium
+https://am91cm5leQ.fubo18.com/espnpremium/mono.m3u8?token=55f08381404dad30b17e68487cdb1ca8269ab7c9-48-1781358239-1781340239
+#EXTINF:-1,TyC Sports
+https://x4bnd7lq.fubo18.com/tycsports/mono.m3u8?token=d4266d71259de3b0293e24298018c75219adcf43-8f-1781358240-1781340240
+#EXTINF:-1,Telefe
+https://a2vlca.fubo18.com/telefe/mono.m3u8?token=3a11e9472f3798dc5ced43164f2b48ddc898a954-e1-1781358241-1781340241
+#EXTINF:-1,Liga1 MAX
+https://dglvz29s.fubo18.com/liga1max/mono.m3u8?token=dd94361f050b3779590d0be2a761f109d5c7abf1-6c-1781358242-1781340242
+#EXTINF:-1,Movistar Deportes
+https://c2f2zq.fubo18.com/movistar/mono.m3u8?token=b3e6783fb1eb1a60e0953a22394a477b25a58ca2-80-1781358243-1781340243
+#EXTINF:-1,Win Sports Plus
+https://ag9wzq.fubo18.com/winsportsplus/mono.m3u8?token=64895e9b5d0a00fbc66c25955d856548e011fb04-d7-1781358244-1781340244
+#EXTINF:-1,Win Sports plus (2)
+https://c2f2zq.fubo18.com/winsports2/mono.m3u8?token=dfffda96bfba1deb7754207ea675c61b64c96a18-c5-1781358245-1781340245
+#EXTINF:-1,Win Sports
+https://wp9xqedt.fubo18.com/winsports/mono.m3u8?token=580da9f58a162774c08845e2446ad9103d0e7a86-5c-1781358247-1781340247
+#EXTINF:-1,TUDN
+https://ag9wzq.fubo18.com/tudn_mx/mono.m3u8?token=cc897d729b074c07dcbefa794eb88466f589a90a-61-1781358248-1781340248
+#EXTINF:-1,Canal 5
+https://a2lja3m.fubo18.com/canal5/mono.m3u8?token=a12eb78282d11704258ea653fb0c47ea1a5f27f4-4b-1781358249-1781340249
+#EXTINF:-1,TVC Deportes
+https://ag9wzq.fubo18.com/tvc_deportes/mono.m3u8?token=7958ea0651eb239d4ed3d6e4c2847c963c85c0c0-32-1781358250-1781340250
+#EXTINF:-1,ESPN Deportes
+https://b2ZmaWNpYWw.fubo18.com/espndeportes/mono.m3u8?token=b67cc056d4ecc6d73d4c2af48daf4cc77ed14d73-d0-1781358251-1781340251
+#EXTINF:-1,TUDN
+https://b2ZmaWNpYWw.fubo18.com/tudn/mono.m3u8?token=a72552e97f966fa9414c788c40a1c8c9a22017fb-f3-1781358252-1781340252
+#EXTINF:-1,Univisión
+https://aw1wcm92zq.fubo18.com/univision/mono.m3u8?token=e7947f759ce2280ddefa3577a883802b4f1b1745-8-1781358253-1781340253
+#EXTINF:-1,Fox Sports 1
+https://aw1wcm92zq.fubo18.com/foxsports1_usa/mono.m3u8?token=ca46d71dbddad1fa5c036ef8515825828be34c4b-50-1781358254-1781340254
+#EXTINF:-1,Fox Sports 2
+https://qzv4jmsc.fubo18.com/foxsports2_usa/mono.m3u8?token=7b74d86d00e79b0fb421529b52e807ee809f6a37-37-1781358256-1781340256
+#EXTINF:-1,BeIN Sports Español
+https://tyg2mnl9.fubo18.com/beinsportes/mono.m3u8?token=13ae1546472851895e68fbb1a1d404668b605ba5-91-1781358257-1781340257
+#EXTINF:-1,Unimás
+https://ag9wzq.fubo18.com/unimas/mono.m3u8?token=90f968efa0398829897cd7a78d25c11ad39b9ec2-9e-1781358258-1781340258
+#EXTINF:-1,Premiere 1
+https://bgvnzw5k.fubo18.com/premiere1/mono.m3u8?token=7527d6397f15eaea4f223ae1df0979bc5f53c867-dc-1781358259-1781340259
+#EXTINF:-1,Premiere 2
+https://dw5pdgvk.fubo18.com/premiere2/mono.m3u8?token=e1e757595f2f652489c75fb03e10997686dc01c1-f5-1781358260-1781340260
+#EXTINF:-1,Premiere 3
+https://a2lja3m.fubo18.com/premiere3/mono.m3u8?token=083bcab37841fb70379e49c2d9cac9e88e8ad847-55-1781358261-1781340261
+#EXTINF:-1,Premiere 4
+https://aw1wcm92zq.fubo18.com/premiere4/mono.m3u8?token=48353c11359950add958e3272f9a644924251a2f-72-1781358262-1781340262
+#EXTINF:-1,Premiere 5
+https://wp9xqedt.fubo18.com/premiere5/mono.m3u8?token=62df58d1816daf5406f970519422db95935c8c8a-63-1781358263-1781340263
+#EXTINF:-1,Premiere 6
+https://bGFuZQ.fubo18.com/premiere6/mono.m3u8?token=6047bd6350fa4d975ccd1b907f60cf56fd4d526f-7c-1781358265-1781340265
+#EXTINF:-1,Premiere 7
+https://anvtcax.fubo18.com/premiere7/mono.m3u8?token=cfb229cbc525256c67bb5db8cb00fd0ed4d3b31e-d-1781358266-1781340266
+#EXTINF:-1,Sportv
+https://bGFuZQ.fubo18.com/sportv/mono.m3u8?token=59602078bf5b14e78661ac17227ddeadcb5fb063-21-1781358267-1781340267
+#EXTINF:-1,Sportv 2
+https://bGFuZQ.fubo18.com/sportv2/mono.m3u8?token=e2bd5d5ff28c5a5a5497c739471978a4b77708e6-48-1781358268-1781340268
+#EXTINF:-1,Sportv 3
+https://cgxheq.fubo18.com/sportv3/mono.m3u8?token=d22a5f2d2016b398a880f7ef256f9c40371412ca-cb-1781358269-1781340269
+#EXTINF:-1,DAZN 1
+https://am91cm5leQ.fubo18.com/dazn1/mono.m3u8?token=f7abdcf8c5f02b63a132007e7183a83729bb9b0e-9e-1781358270-1781340270
+#EXTINF:-1,Liga de Campeones 2
+https://c2nvdxq.fubo18.com/ligadecampeones2/mono.m3u8?token=1765358ceaf90864018a26300e384ef161e0b42d-8e-1781358271-1781340271
+#EXTINF:-1,LaLigaTV BAR
+https://a2vlca.fubo18.com/laligatvbar/mono.m3u8?token=bb299acfc91b40aaa8cac9b6ef123b7ced5cbbc8-ba-1781358272-1781340272
