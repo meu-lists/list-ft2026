@@ -2,6 +2,7 @@
 #EXTINF:-1,ESPN
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
+<<<<<<< HEAD
 https://eWVz.fubo18.com/espn/mono.m3u8?token=36bc85e9001c10633ca90ff07da4188baa47fa42-d7-1781383293-1781365293
 #EXTINF:-1,ESPN 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
@@ -199,3 +200,202 @@ https://ag9wzq.fubo18.com/ligadecampeones2/mono.m3u8?token=4d5618a36f814671725d0
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
 https://c2nvdxq.fubo18.com/laligatvbar/mono.m3u8?token=b1542acca725b43e7b7e9655903a6d6588a177cd-ff-1781383294-1781365294
+=======
+https://tyg2mnl9.fubo18.com/espn/mono.m3u8?token=3a135bebc1f191a7183f552c6c9271f3d3458432-52-1781384468-1781366468
+#EXTINF:-1,ESPN 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://y2fzdgxl.fubo18.com/espn2/mono.m3u8?token=3578bb7fff0bcccfb4d3f6436071bec2d58f2e0e-34-1781384468-1781366468
+#EXTINF:-1,ESPN 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://b2ZmaWNpYWw.fubo18.com/espn3/mono.m3u8?token=07658b800c7bbd97aa5a4c8d7b761bc77c405da1-76-1781384468-1781366468
+#EXTINF:-1,ESPN 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://x4bnd7lq.fubo18.com/espn4/mono.m3u8?token=9693fa257eaac4a775e60a7dd45501e819b25795-b0-1781384468-1781366468
+#EXTINF:-1,ESPN 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://anvtcax.fubo18.com/espn5/mono.m3u8?token=907184f4277e8b8cdb534c194b9be2058415c13f-1e-1781384468-1781366468
+#EXTINF:-1,ESPN 6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://c2f2zq.fubo18.com/espn6/mono.m3u8?token=3bff52f2998787143583127a3eb31d323192be28-e8-1781384468-1781366468
+#EXTINF:-1,ESPN 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://anvtcax.fubo18.com/espn7/mono.m3u8?token=3e5e1dd189c98d72a4da85cd5a22994a1742979b-ff-1781384468-1781366468
+#EXTINF:-1,DSports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://bGFuZQ.fubo18.com/dsports/mono.m3u8?token=243a3b13c958e2d691005e3e0e153fa65a336151-85-1781384468-1781366468
+#EXTINF:-1,DSports 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://bmf0aw9u.fubo18.com/dsports2/mono.m3u8?token=30f75e60c7649a85e1ac00be8071a275da5b2a58-9a-1781384468-1781366468
+#EXTINF:-1,DSports Plus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://b2ZmaWNpYWw.fubo18.com/dsportsplus/mono.m3u8?token=b007473e9de50f4e09ca8ff46d82ebb2aa1c762f-82-1781384468-1781366468
+#EXTINF:-1,GOLTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://a2lja3m.fubo18.com/goltv/mono.m3u8?token=9e0852a0d97b2adbd6ef14460265b3c0df9fccb3-d2-1781384468-1781366468
+#EXTINF:-1,VTV Plus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://wp9xqedt.fubo18.com/vtvplus/mono.m3u8?token=97370b1fe2e3346bb775e638a111e5ed14f5949e-f3-1781384468-1781366468
+#EXTINF:-1,ECDF LigaPro (eventos)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://ag9wzq.fubo18.com/ecdf_ligapro/mono.m3u8?token=a896aa802b640d015b9669062fa98680b441b2f7-2c-1781384468-1781366468
+#EXTINF:-1,Fox Sports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://bmf0aw9u.fubo18.com/foxsports/mono.m3u8?token=715fff013f73064f4f934d399bd8a0a787f7cd9e-45-1781384468-1781366468
+#EXTINF:-1,Fox Sports 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://dw5pdgvk.fubo18.com/foxsports2/mono.m3u8?token=7f41a9fbdd35d2cb8a9c0e6be47da30336ccd4a3-fa-1781384468-1781366468
+#EXTINF:-1,Fox Sports 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://aw1wcm92zq.fubo18.com/foxsports3/mono.m3u8?token=aff814ff2734a098c7902e91d3088c2ff3c2085b-41-1781384468-1781366468
+#EXTINF:-1,TNT Sports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://eWVz.fubo18.com/tntsports/mono.m3u8?token=6a8d7eff311049f373089de253585fe8fce3f0af-b3-1781384468-1781366468
+#EXTINF:-1,ESPN Premium
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://rm8zcvk3.fubo18.com/espnpremium/mono.m3u8?token=403d3a46b541d3f5ca01bd7aac4b096a0f64adf6-72-1781384468-1781366468
+#EXTINF:-1,TyC Sports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://b2ZmaWNpYWw.fubo18.com/tycsports/mono.m3u8?token=2a8314a9c4890b1672533ced90be1dfe2c76f379-6d-1781384468-1781366468
+#EXTINF:-1,Telefe
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://b2ZmaWNpYWw.fubo18.com/telefe/mono.m3u8?token=ec5e99dddd92637c0eb4fddc2b67e69a73887275-9c-1781384468-1781366468
+#EXTINF:-1,Liga1 MAX
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://c2nvdxq.fubo18.com/liga1max/mono.m3u8?token=51937b17ef6ce736e98b17d72b8a466782ab0a97-cd-1781384468-1781366468
+#EXTINF:-1,Movistar Deportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://aw1wcm92zq.fubo18.com/movistar/mono.m3u8?token=170a6513bcd30854b013433057b46a08aabfeb22-3a-1781384468-1781366468
+#EXTINF:-1,Win Sports Plus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://ym9yzq.fubo18.com/winsportsplus/mono.m3u8?token=a0aabbe8949b2b71a7d40b8ab4d1e27a8b997783-6f-1781384468-1781366468
+#EXTINF:-1,Win Sports plus (2)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://qzv4jmsc.fubo18.com/winsports2/mono.m3u8?token=cfdfe068fd921183fc49640b9f68759bf61d13d0-4c-1781384468-1781366468
+#EXTINF:-1,Win Sports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://ag9wzq.fubo18.com/winsports/mono.m3u8?token=177ad743accf8ffff27ab25656d63eb8863d8c73-e9-1781384468-1781366468
+#EXTINF:-1,TUDN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://a2lja3m.fubo18.com/tudn_mx/mono.m3u8?token=720a53cb58ae79a6853d6fd7e77317681df75ad8-2c-1781384468-1781366468
+#EXTINF:-1,Canal 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://dglvz29s.fubo18.com/canal5/mono.m3u8?token=8ec734bec79c11f6aefbddda6aad990b075798a4-9b-1781384468-1781366468
+#EXTINF:-1,TVC Deportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://dglvz29s.fubo18.com/tvc_deportes/mono.m3u8?token=14608ae380987d5edcd206588d3835d5f1423219-67-1781384468-1781366468
+#EXTINF:-1,Sky Sports LaLiga
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://c2nvdxq.fubo18.com/sky_sports_laliga/mono.m3u8?token=be8bdd31da6add563d1929c7fef9b7cb2add4b0f-b4-1781384468-1781366468
+#EXTINF:-1,Fox Deportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://ag9wzq.fubo18.com/foxdeportes/mono.m3u8?token=1a3a9d358cf4fef0dbbac5efcefc3699c23f120f-67-1781384468-1781366468
+#EXTINF:-1,ESPN Deportes
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://x4bnd7lq.fubo18.com/espndeportes/mono.m3u8?token=f546b2e5ecb26059e7af9a6e7c8e308ec996d810-80-1781384468-1781366468
+#EXTINF:-1,TUDN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://qzv4jmsc.fubo18.com/tudn/mono.m3u8?token=f7e0045736da0a330b12498d1d7e84d6d14a2562-90-1781384469-1781366469
+#EXTINF:-1,Univisión
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://bGFuZQ.fubo18.com/univision/mono.m3u8?token=545616bb7a9d79f991683b3a692e2a1a859f0532-a7-1781384469-1781366469
+#EXTINF:-1,Fox Sports 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://qzv4jmsc.fubo18.com/foxsports1_usa/mono.m3u8?token=3fcceb7a74661803f242a51278a9f35268755b4f-a8-1781384469-1781366469
+#EXTINF:-1,Fox Sports 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://bgvnzw5k.fubo18.com/foxsports2_usa/mono.m3u8?token=1c46453f059d4eb811603672ca2a395a87ea06a9-81-1781384469-1781366469
+#EXTINF:-1,BeIN Sports Español
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://ag9wzq.fubo18.com/beinsportes/mono.m3u8?token=86abb7fa10c48199653723076721fed208c9c31b-60-1781384469-1781366469
+#EXTINF:-1,Unimás
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://x4bnd7lq.fubo18.com/unimas/mono.m3u8?token=17fca04f4d542587bb05fb29ba9f4ae257455f47-7b-1781384469-1781366469
+#EXTINF:-1,Premiere 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://b2ZmaWNpYWw.fubo18.com/premiere1/mono.m3u8?token=94b51b9f24810c50d04fc794c3eab1feff63bd8d-9c-1781384469-1781366469
+#EXTINF:-1,Premiere 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://x4bnd7lq.fubo18.com/premiere2/mono.m3u8?token=acb0a099fe7f9cea36b326b44362cd110bee242f-53-1781384469-1781366469
+#EXTINF:-1,Premiere 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://c2f2zq.fubo18.com/premiere3/mono.m3u8?token=067332cdb4b927e41bf878dd57403d699075c82a-b0-1781384469-1781366469
+#EXTINF:-1,Premiere 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://wp9xqedt.fubo18.com/premiere4/mono.m3u8?token=0ea61bd9f16cb6b751513dd39c5618301c44b6fc-a1-1781384469-1781366469
+#EXTINF:-1,Premiere 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://bgvnzw5k.fubo18.com/premiere5/mono.m3u8?token=f3c25920893291748226dad9c37cf738bf3ec2b7-4-1781384469-1781366469
+#EXTINF:-1,Premiere 6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://b2ZmaWNpYWw.fubo18.com/premiere6/mono.m3u8?token=ebceae47316092037268391fc78afc0a741e2461-e0-1781384469-1781366469
+#EXTINF:-1,Premiere 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://qzv4jmsc.fubo18.com/premiere7/mono.m3u8?token=f3964f2145ef7cd771f2b97fb876c75d1d638e52-70-1781384469-1781366469
+#EXTINF:-1,Sportv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://a2lja3m.fubo18.com/sportv/mono.m3u8?token=20022a622aef9ea7f3ee8e74908e0fc984d74365-81-1781384469-1781366469
+#EXTINF:-1,Sportv 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://YXdlc29tZQ.fubo18.com/sportv2/mono.m3u8?token=2824dd97605242caa2964a6b1cac787e17c9378a-3b-1781384469-1781366469
+#EXTINF:-1,Sportv 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://cgxheq.fubo18.com/sportv3/mono.m3u8?token=1a8b0338d2f6c062dfe6fae13b8e982d358200c4-d2-1781384469-1781366469
+#EXTINF:-1,DAZN 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://cgxheq.fubo18.com/dazn1/mono.m3u8?token=533823d06007c0d13c847f98f788eef698bd1f67-cc-1781384469-1781366469
+#EXTINF:-1,Liga de Campeones 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://tyg2mnl9.fubo18.com/ligadecampeones2/mono.m3u8?token=f6dd21134f2375de3231a3a41dbc07d8868d5bfb-12-1781384469-1781366469
+#EXTINF:-1,LaLigaTV BAR
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://agvyby.fubo18.com/laligatvbar/mono.m3u8?token=acd23a53e64061c624eadc472fd1b7aa9801ba14-a1-1781384469-1781366469
+>>>>>>> 54f678f (validate urls)

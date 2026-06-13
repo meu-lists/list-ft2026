@@ -59,6 +59,41 @@ def clean_playback_url(url: str) -> str:
     return re.sub(r"^https://([^/]+):443/", r"https://\1/", url)
 
 
+def validate_playback(playback: str) -> bool:
+    """Check if a playback URL returns HTTP 200."""
+    try:
+        resp = requests.get(
+            playback,
+            headers={"User-Agent": USER_AGENT, "Referer": REFERER_URL},
+            timeout=5,
+        )
+        return resp.status_code == 200
+    except requests.RequestException:
+        return False
+
+
+def validate_all_playbacks(
+    results: list[dict], max_workers: int = 10
+) -> list[dict]:
+    """Validate playback URLs in parallel, return only working ones."""
+    total = len(results)
+    ok_flags: list[bool] = [False] * total
+
+    def check_one(idx: int, ch: dict) -> tuple[int, bool]:
+        playback = ch.get("playback")
+        if not playback:
+            return idx, False
+        return idx, validate_playback(playback)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(check_one, i, ch) for i, ch in enumerate(results)]
+        for future in concurrent.futures.as_completed(futures):
+            idx, ok = future.result()
+            ok_flags[idx] = ok
+
+    return [results[i] for i in range(total) if ok_flags[i]]
+
+
 def make_simple_extinf(name: str) -> str:
     return f"#EXTINF:-1,{name}"
 
@@ -218,6 +253,14 @@ def main():
 
     # ── fetch all playbacks in parallel ───────────────────────────
     results = fetch_all_playbacks(channels, max_workers=args.max_workers)
+
+    # ── validate playbacks in parallel ────────────────────────────
+    total_before = sum(1 for ch in results if ch.get("playback"))
+    print(f"  Validating {total_before} playback URLs ...", file=sys.stderr)
+    results = validate_all_playbacks(results, max_workers=args.max_workers)
+    dropped = total_before - len(results)
+    if dropped:
+        print(f"  [!] Dropped {dropped} channels that returned HTTP error", file=sys.stderr)
 
     # ── build both M3U outputs from the same data ─────────────────
     simple_lines = ["#EXTM3U\n"]
