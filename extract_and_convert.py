@@ -4,26 +4,27 @@
 Auto-discovers channels from https://la18hd.com/status.json,
 groups them by region, and only processes active channels.
 
+Generates both simple fifa2026-list.m3u and extended fifa2026-list-9xtream.m3u
+from a single parallel fetch pass.
+
 Usage:
-  python extract_and_convert.py                          # auto-discover & output fifa2026-list.m3u
-  python extract_and_convert.py --extended               # extended tvg-id/group-title format
+  python extract_and_convert.py                          # auto-discover & output both files
   python extract_and_convert.py --inactive               # include inactive channels too
-  python extract_and_convert.py --output mylist.m3u      # custom output file
+  python extract_and_convert.py --output mylist.m3u      # custom output filenames
   python extract_and_convert.py urls.txt                 # legacy: read from file
 """
 
 import argparse
+import concurrent.futures
 import json
 import re
 import sys
-import time
 from pathlib import Path
 
 import requests
 
 STATUS_JSON_URL = "https://la18hd.com/status.json"
 BASE_URL = "https://la18hd.com"
-DEFAULT_DELAY = 1
 
 
 # ── helpers ──────────────────────────────────────────────────────────
@@ -151,6 +152,32 @@ def parse_urls_file(path: str) -> list[dict]:
     return channels
 
 
+# ── parallel fetching ────────────────────────────────────────────────
+
+def fetch_all_playbacks(channels: list[dict], max_workers: int = 10) -> list[dict]:
+    """Fetch playback URLs for all channels in parallel, preserving original order."""
+    total = len(channels)
+    results: list[dict] = [None] * total
+
+    def fetch_one(idx: int, ch: dict) -> tuple[int, dict]:
+        name = ch["name"]
+        url = ch["url"]
+        region = ch["region"]
+        print(f"  Fetching: [{region}] {name}", file=sys.stderr)
+        playback = fetch_playback(url, name)
+        if playback:
+            playback = clean_playback_url(playback)
+        return idx, {**ch, "playback": playback}
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(fetch_one, i, ch) for i, ch in enumerate(channels)]
+        for future in concurrent.futures.as_completed(futures):
+            idx, result = future.result()
+            results[idx] = result
+
+    return results
+
+
 # ── main ─────────────────────────────────────────────────────────────
 
 def main():
@@ -158,10 +185,9 @@ def main():
         description="Extract streaming URLs from la18hd.com and generate M3U playlists.",
     )
     parser.add_argument("input", nargs="?", help="Legacy urls.txt file (omit to auto-discover)")
-    parser.add_argument("-o", "--output", default="fifa2026-list.m3u", help="Output M3U file")
-    parser.add_argument("--extended", action="store_true", help="Extended tvg-id/group-title format (9Xtream compatible)")
+    parser.add_argument("-o", "--output", default="fifa2026-list.m3u", help="Output M3U file (simple format; extended derives name)")
     parser.add_argument("--inactive", action="store_true", help="Include inactive channels")
-    parser.add_argument("--delay", type=float, default=DEFAULT_DELAY, help="Delay between requests")
+    parser.add_argument("--max-workers", type=int, default=10, help="Max concurrent fetches (default: 10)")
     args = parser.parse_args()
 
     # ── collect channels ──────────────────────────────────────────
@@ -181,40 +207,48 @@ def main():
         print("No channels to process.", file=sys.stderr)
         sys.exit(0)
 
-    # ── fetch playbacks ───────────────────────────────────────────
-    m3u_lines = ["#EXTM3U\n"]
+    # ── fetch all playbacks in parallel ───────────────────────────
+    results = fetch_all_playbacks(channels, max_workers=args.max_workers)
+
+    # ── build both M3U outputs from the same data ─────────────────
+    simple_lines = ["#EXTM3U\n"]
+    ext_lines = ["#EXTM3U\n"]
     groups_seen: set[str] = set()
     success = 0
 
-    for ch in channels:
+    for ch in results:
+        playback = ch.get("playback")
+        if not playback:
+            continue
         name = ch["name"]
-        url = ch["url"]
         region = ch["region"]
+        success += 1
 
-        print(f"  Fetching: [{region}] {name}", file=sys.stderr)
-        playback = fetch_playback(url, name)
-        if playback:
-            playback = clean_playback_url(playback)
-            success += 1
+        # Simple format
+        simple_lines.append(f"{make_simple_extinf(name)}\n{playback}\n")
 
-            if args.extended:
-                group = extract_brand(name) if region == "Custom" else region
-                groups_seen.add(group)
-                tvg_id = generate_tvg_id(name, region)
-                extinf = make_9xtream_extinf(name, tvg_id, name, group)
-            else:
-                extinf = make_simple_extinf(name)
+        # Extended 9Xtream format
+        group = extract_brand(name) if region == "Custom" else region
+        groups_seen.add(group)
+        tvg_id = generate_tvg_id(name, region)
+        extinf = make_9xtream_extinf(name, tvg_id, name, group)
+        ext_lines.append(f"{extinf}\n{playback}\n")
 
-            m3u_lines.append(f"{extinf}\n{playback}\n")
-        time.sleep(args.delay)
+    # ── derive extended filename ──────────────────────────────────
+    out_path = Path(args.output)
+    ext_output = str(out_path.with_stem(f"{out_path.stem}-9xtream"))
 
-    # ── write output ──────────────────────────────────────────────
     with open(args.output, "w", encoding="utf-8") as f:
-        f.writelines(m3u_lines)
+        f.writelines(simple_lines)
 
-    print(f"\nDone! {success} channels written to {args.output}", file=sys.stderr)
+    with open(ext_output, "w", encoding="utf-8") as f:
+        f.writelines(ext_lines)
+
+    print(f"\nDone! {success} channels written:", file=sys.stderr)
+    print(f"  Simple:   {args.output}", file=sys.stderr)
+    print(f"  9Xtream:  {ext_output}", file=sys.stderr)
     if groups_seen:
-        print(f"   Groups: {sorted(groups_seen)}", file=sys.stderr)
+        print(f"  Groups: {sorted(groups_seen)}", file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -21,11 +21,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate simple M3U
+      - name: Generate M3U playlists
         run: python extract_and_convert.py -o fifa2026-list.m3u
-
-      - name: Generate 9Xtream M3U
-        run: python extract_and_convert.py --extended -o fifa2026-list-9xtream.m3u
 
       - name: Commit and push changes
         run: |
