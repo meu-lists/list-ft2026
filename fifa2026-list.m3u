@@ -1,24 +1,23 @@
 #EXTM3U
-#EXTINF:-1,TNT Sports Argentina en vivo por internet
-https://bgvnzw5k.fubo18.com/tntsports/mono.m3u8?token=074dc682016569c543e8efee6e1c53f81651c4c3-b4-1781301546-1781283546
-#EXTINF:-1,ESPN Premium Argentina en vivo por internet
-https://yxdlc29tzq.fubo18.com/espnpremium/mono.m3u8?token=e997641205a7029baa241f8de8952d2492406dd5-20-1781301393-1781283393
-#EXTINF:-1,TyC Sports Argentina en vivo por internet 
-https://cgxheq.fubo18.com/tycsports/mono.m3u8?token=0d8bea942c5b21652e4bd5e6fa08d9491546c7b6-f4-1781301715-1781283715
-#EXTINF:-1,DirecTV Sports Argentina en vivo por internet
-https://bgvnzw5k.fubo18.com/dsports/mono.m3u8?token=3684d1cd5f9337f97b59e2384e7533150e66e6de-e9-1781301827-1781283827
-#EXTINF:-1,DirecTV Sports 2 Argentina en vivo por internet
-https://cgxheq.fubo18.com/dsports2/mono.m3u8?token=d8b947287816fbae3c4073bc4bb612490c398992-2-1781310408-1781292408
-#EXTINF:-1,DirecTV Sports + Argentina en vivo por internet
-https://dglvz29s.fubo18.com/dsportsplus/mono.m3u8?token=14a027564684daca1a60a4e15328bef9369be0c2-62-1781310507-1781292507
-#EXTINF:-1,ESPN 1 Argentina en vivo por internet
-https://tyg2mnl9.fubo18.com/espn/mono.m3u8?token=e4e73af0357bafa39458560220bb5ee8f9b07e70-c7-1781310621-1781292621
-#EXTINF:-1,ESPN 2 Argentina en vivo por internet
-https://agvyby.fubo18.com/espn2/mono.m3u8?token=df1da9ba619eb1270870c48021bb63d1f411b507-65-1781310684-1781292684
-#EXTINF:-1,ESPN 3 (Argentina) en vivo por internet
-https://yxdlc29tzq.fubo18.com/espn3/mono.m3u8?token=bb3e618ee765ada03a59d63dce2e852adc95d6a0-6f-1781310744-1781292744
-#EXTINF:-1,Fox Sports 2 Argentina en vivo por internet
-https://am91cm5leq.fubo18.com/foxsports2/mono.m3u8?token=745f4cf36412ba32e1690246e7e5f5f2e2e86859-44-1781310808-1781292808
-#EXTINF:-1,Fox Sports 3 Argentina en vivo por internet
-https://bmf0aw9u.fubo18.com/foxsports3/mono.m3u8?token=38ee7cd6c1693ebf9e6c8515aa50aaa19fcbf1c6-e5-1781310859-1781292859
-
+#EXTINF:-1,TNT Sports Argentina
+https://a2lja3m.fubo18.com:443/tntsports/mono.m3u8?token=4e1c83111382acce9c967119e0a269e0ac5c6737-7c-1781356865-1781338865
+#EXTINF:-1,ESPN Premium Argentina
+https://tyg2mnl9.fubo18.com:443/espnpremium/mono.m3u8?token=9432443472399d283f760422732572baa2be09fd-cc-1781356866-1781338866
+#EXTINF:-1,TyC Sports Argentina
+https://YXdlc29tZQ.fubo18.com:443/tycsports/mono.m3u8?token=9b0161a8aa35cb772128fb97f250a32ed732b06d-1f-1781356867-1781338867
+#EXTINF:-1,DirecTV Sports Argentina
+https://tyg2mnl9.fubo18.com:443/dsports/mono.m3u8?token=1d380e526a9337dcc49c81bb7eca8351ec592965-34-1781356868-1781338868
+#EXTINF:-1,DirecTV Sports 2 Argentina
+https://rm8zcvk3.fubo18.com:443/dsports2/mono.m3u8?token=db2f658197452e46b94776b3fcd85054275910e3-34-1781356870-1781338870
+#EXTINF:-1,DirecTV Sports + Argentina
+https://bGFuZQ.fubo18.com:443/dsportsplus/mono.m3u8?token=7378bf4b4e007492b6ae627f0c00c36e17cfd184-a5-1781356871-1781338871
+#EXTINF:-1,ESPN 1 Argentina
+https://b2ZmaWNpYWw.fubo18.com:443/espn/mono.m3u8?token=fcf76294ef0240d99a92a571b4bd6bfc70991981-4-1781356872-1781338872
+#EXTINF:-1,ESPN 2 Argentina
+https://c2nvdxq.fubo18.com:443/espn2/mono.m3u8?token=9e1e3278dc40a335d8e72949ff0c68be6dbaafc0-f-1781356873-1781338873
+#EXTINF:-1,ESPN 3 Argentina
+https://wp9xqedt.fubo18.com:443/espn3/mono.m3u8?token=f606b078c992a5d46f916a67c06c923de1396751-fa-1781356874-1781338874
+#EXTINF:-1,Fox Sports 2 Argentina
+https://eWVz.fubo18.com:443/foxsports2/mono.m3u8?token=fe4e205513fb161b8444c621feb01249796ba335-8c-1781356875-1781338875
+#EXTINF:-1,Fox Sports 3 Argentina
+https://bmf0aw9u.fubo18.com:443/foxsports3/mono.m3u8?token=06caf739ab4a6182f5a7eb9e3707a5c8020fa978-39-1781356876-1781338876
