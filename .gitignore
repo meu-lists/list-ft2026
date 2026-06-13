@@ -12,3 +12,6 @@ env/
 .idea/
 
 .python-version
+
+# cron
+cron.log
