@@ -11,5 +11,17 @@ if git diff --cached --quiet; then
 else
     git commit -m "chore: update M3U playlists [skip ci]"
     git push
-    echo "$(date): Updated and pushed"
+
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    for i in $(seq 1 100); do
+        sleep 5
+        git fetch origin "$branch" 2>/dev/null
+        if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/$branch 2>/dev/null)" ]; then
+            echo "$(date): Updated and pushed (confirmed after $i attempts)"
+            exit 0
+        fi
+    done
+
+    echo "$(date): ERROR: push not confirmed after 100 attempts" >&2
+    exit 1
 fi
