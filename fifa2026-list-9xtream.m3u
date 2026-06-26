@@ -2,160 +2,152 @@
 #EXTINF:-1 tvg-id="espn.5.latinoamerica" tvg-name="ESPN 5" tvg-logo="" group-title="LATINOAMERICA",ESPN 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://a2vlca.fubo18.com/espn5/mono.m3u8?token=1ab7e7c49589730a7fc4a5fb11e96b3b69702e25-31-1782492302-1782474302
+https://eWVz.fubo18.com/espn5/mono.m3u8?token=835e7207859be58f72d9003413a37b0f51e90a60-e6-1782506702-1782488702
+#EXTINF:-1 tvg-id="espn.6.latinoamerica" tvg-name="ESPN 6" tvg-logo="" group-title="LATINOAMERICA",ESPN 6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://bGFuZQ.fubo18.com/espn6/mono.m3u8?token=3e87bf57c514987115a8e3adcef6d86508d1f1eb-70-1782506702-1782488702
+#EXTINF:-1 tvg-id="espn.7.latinoamerica" tvg-name="ESPN 7" tvg-logo="" group-title="LATINOAMERICA",ESPN 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://bgvnzw5k.fubo18.com/espn7/mono.m3u8?token=ba1ca5fd1f05bddd32d6ba66d1b5012e253f18a9-67-1782506702-1782488702
 #EXTINF:-1 tvg-id="dsports.2.latinoamerica" tvg-name="DSports 2" tvg-logo="" group-title="LATINOAMERICA",DSports 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://rm8zcvk3.fubo18.com/dsports2/mono.m3u8?token=7b59db113b4d21b1552e096d9ce3f82358dc8e96-6e-1782492302-1782474302
+https://ym9yzq.fubo18.com/dsports2/mono.m3u8?token=b85a5b11dd4cb90a7819d3a4ecd10f09433ba289-9d-1782506702-1782488702
 #EXTINF:-1 tvg-id="dsports.plus.latinoamerica" tvg-name="DSports Plus" tvg-logo="" group-title="LATINOAMERICA",DSports Plus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://YXdlc29tZQ.fubo18.com/dsportsplus/mono.m3u8?token=a823a8c744e8daf12d1fb866fadfcd52f370e1c4-57-1782492302-1782474302
-#EXTINF:-1 tvg-id="goltv.latinoamerica" tvg-name="GOLTV" tvg-logo="" group-title="LATINOAMERICA",GOLTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTVLCOPT:http-referrer=https://la18hd.com/
-https://a2lja3m.fubo18.com/goltv/mono.m3u8?token=a3c05b1039bc9df022af58573c66c219f42eb004-55-1782492302-1782474302
+https://wp9xqedt.fubo18.com/dsportsplus/mono.m3u8?token=3ea137ff7a83de236a13fecb8d94832157931aa6-3b-1782506702-1782488702
 #EXTINF:-1 tvg-id="vtv.plus.latinoamerica" tvg-name="VTV Plus" tvg-logo="" group-title="LATINOAMERICA",VTV Plus
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://agvyby.fubo18.com/vtvplus/mono.m3u8?token=dd08097aa33282eb225b84022acd782ebe9c4445-d3-1782492302-1782474302
-#EXTINF:-1 tvg-id="ecdf.ligapro.eventos.latinoamerica" tvg-name="ECDF LigaPro (eventos)" tvg-logo="" group-title="LATINOAMERICA",ECDF LigaPro (eventos)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTVLCOPT:http-referrer=https://la18hd.com/
-https://a2vlca.fubo18.com/ecdf_ligapro/mono.m3u8?token=737503b8db8b8ce1ee872957577c12cb9f77c943-80-1782492302-1782474302
+https://tyg2mnl9.fubo18.com/vtvplus/mono.m3u8?token=2d612ac2986b6cc1e535f56933e2c6745495fa83-de-1782506702-1782488702
 #EXTINF:-1 tvg-id="fox.sports.argentina" tvg-name="Fox Sports" tvg-logo="" group-title="ARGENTINA",Fox Sports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://eWVz.fubo18.com/foxsports/mono.m3u8?token=e1df0082c1dfb11e1244b87b29950bbad67c8c6c-27-1782492302-1782474302
+https://c2f2zq.fubo18.com/foxsports/mono.m3u8?token=f0a968c03d088448a72026989d456fcb22d55f6c-15-1782506702-1782488702
 #EXTINF:-1 tvg-id="fox.sports.2.argentina" tvg-name="Fox Sports 2" tvg-logo="" group-title="ARGENTINA",Fox Sports 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://dglvz29s.fubo18.com/foxsports2/mono.m3u8?token=286ec0ce4c2abf7f1a3196b55f116b24f5c4babb-fa-1782492302-1782474302
+https://qzv4jmsc.fubo18.com/foxsports2/mono.m3u8?token=03fcf6501a94eac7120b146e6c911d403c3e0fff-1e-1782506702-1782488702
 #EXTINF:-1 tvg-id="fox.sports.3.argentina" tvg-name="Fox Sports 3" tvg-logo="" group-title="ARGENTINA",Fox Sports 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://qzv4jmsc.fubo18.com/foxsports3/mono.m3u8?token=fcf9718035ba5c9f2b8d43254bdaac9bd5fb7b4d-44-1782492302-1782474302
-#EXTINF:-1 tvg-id="tnt.sports.argentina" tvg-name="TNT Sports" tvg-logo="" group-title="ARGENTINA",TNT Sports
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTVLCOPT:http-referrer=https://la18hd.com/
-https://bGFuZQ.fubo18.com/tntsports/mono.m3u8?token=720d0e7cbcc834bd125fb732f1f47b49adbcea1c-57-1782492302-1782474302
+https://x4bnd7lq.fubo18.com/foxsports3/mono.m3u8?token=55cff104e055bb8b1e2894217cfc5be077f7493c-b-1782506702-1782488702
 #EXTINF:-1 tvg-id="espn.premium.argentina" tvg-name="ESPN Premium" tvg-logo="" group-title="ARGENTINA",ESPN Premium
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://am91cm5leQ.fubo18.com/espnpremium/mono.m3u8?token=24fa32f7081a2c8908a823d37688b9250906f8b9-93-1782492302-1782474302
+https://am91cm5leQ.fubo18.com/espnpremium/mono.m3u8?token=f3f12e27d7dd503e8e5465ce381d73a3b96e62a3-8c-1782506702-1782488702
 #EXTINF:-1 tvg-id="tyc.sports.argentina" tvg-name="TyC Sports" tvg-logo="" group-title="ARGENTINA",TyC Sports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://bmf0aw9u.fubo18.com/tycsports/mono.m3u8?token=39ebba79cc98e130f34c9c028ed057a5d5761d07-e7-1782492302-1782474302
+https://am91cm5leQ.fubo18.com/tycsports/mono.m3u8?token=85c044c35e658e7a6b92e8c3f942ec21b75c9681-26-1782506702-1782488702
 #EXTINF:-1 tvg-id="telefe.argentina" tvg-name="Telefe" tvg-logo="" group-title="ARGENTINA",Telefe
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://tyg2mnl9.fubo18.com/telefe/mono.m3u8?token=58bc67198f667956895071efc43dbb4f0a77ec24-33-1782492302-1782474302
+https://agvyby.fubo18.com/telefe/mono.m3u8?token=6a88d473b9a663ca276cb11a0baa2359d2e80ab8-e7-1782506702-1782488702
 #EXTINF:-1 tvg-id="liga1.max.perú" tvg-name="Liga1 MAX" tvg-logo="" group-title="PERÚ",Liga1 MAX
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://cgxheq.fubo18.com/liga1max/mono.m3u8?token=40bb9b51b090d6474fca54d07818bb0af18f3a44-e4-1782492302-1782474302
+https://a2lja3m.fubo18.com/liga1max/mono.m3u8?token=4b244760a8d6ff0854b21874c37235afaa4e92ff-4d-1782506702-1782488702
 #EXTINF:-1 tvg-id="movistar.deportes.perú" tvg-name="Movistar Deportes" tvg-logo="" group-title="PERÚ",Movistar Deportes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://rm8zcvk3.fubo18.com/movistar/mono.m3u8?token=ab9ad4befc87b13c59d30cc9c6a2fa5cc5532193-21-1782492302-1782474302
+https://dglvz29s.fubo18.com/movistar/mono.m3u8?token=3d8dd2e06e5bca60f47fdccf730f86835eb510a7-c0-1782506702-1782488702
 #EXTINF:-1 tvg-id="win.sports.plus.2.colombia" tvg-name="Win Sports plus (2)" tvg-logo="" group-title="COLOMBIA",Win Sports plus (2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://bmf0aw9u.fubo18.com/winsports2/mono.m3u8?token=611ef43baf3e57cbbd2401888eff53b6cf7a2e28-42-1782492302-1782474302
+https://YXdlc29tZQ.fubo18.com/winsports2/mono.m3u8?token=dc8d5d6e8c67e3e5ef4ed145af03cf64f72e11d4-fa-1782506702-1782488702
 #EXTINF:-1 tvg-id="win.sports.colombia" tvg-name="Win Sports" tvg-logo="" group-title="COLOMBIA",Win Sports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://y2fzdgxl.fubo18.com/winsports/mono.m3u8?token=cec67c8f219f2ea9318bed9e0d09b891fffde80d-25-1782492302-1782474302
+https://bgvnzw5k.fubo18.com/winsports/mono.m3u8?token=c77a765f7d662f4846767a98c5e012396600001b-21-1782506702-1782488702
+#EXTINF:-1 tvg-id="tudn.méxico" tvg-name="TUDN" tvg-logo="" group-title="MÉXICO",TUDN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://a2lja3m.fubo18.com/tudn_mx/mono.m3u8?token=38f7d095eb5af3482dabeb7160fca28576077918-8a-1782506702-1782488702
 #EXTINF:-1 tvg-id="azteca.7.méxico" tvg-name="Azteca 7" tvg-logo="" group-title="MÉXICO",Azteca 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://rm8zcvk3.fubo18.com/azteca7/mono.m3u8?token=3482bcbedc117cd03b89ce57e6286afb38c26326-ff-1782492302-1782474302
+https://b2ZmaWNpYWw.fubo18.com/azteca7/mono.m3u8?token=c1775984e7cfd05a74895727758230bcf64f1ec7-a3-1782506702-1782488702
 #EXTINF:-1 tvg-id="canal.5.méxico" tvg-name="Canal 5" tvg-logo="" group-title="MÉXICO",Canal 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://bGFuZQ.fubo18.com/canal5/mono.m3u8?token=d05e202b7c8ac55b244e7b9d58cf09a7870df713-8b-1782492302-1782474302
+https://bgvnzw5k.fubo18.com/canal5/mono.m3u8?token=98c43be623c5933344fa50f37bc112aea163a6f5-26-1782506702-1782488702
 #EXTINF:-1 tvg-id="tvc.deportes.méxico" tvg-name="TVC Deportes" tvg-logo="" group-title="MÉXICO",TVC Deportes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://eWVz.fubo18.com/tvc_deportes/mono.m3u8?token=55eae7a47b971fcf9a52c8f55c7960f763c507fb-73-1782492302-1782474302
+https://c2f2zq.fubo18.com/tvc_deportes/mono.m3u8?token=428295a2af392895fe3ca46fb45baf3fff4fabac-77-1782506702-1782488702
 #EXTINF:-1 tvg-id="fox.deportes.usa" tvg-name="Fox Deportes" tvg-logo="" group-title="USA",Fox Deportes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://ym9yzq.fubo18.com/foxdeportes/mono.m3u8?token=9047deb1746e4d564c82374e14aaddc90139b56c-25-1782492302-1782474302
+https://c2f2zq.fubo18.com/foxdeportes/mono.m3u8?token=acd835bbcfa2a0e5d4a7479473a3d591177142a0-2-1782506702-1782488702
 #EXTINF:-1 tvg-id="espn.deportes.usa" tvg-name="ESPN Deportes" tvg-logo="" group-title="USA",ESPN Deportes
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://a2lja3m.fubo18.com/espndeportes/mono.m3u8?token=eaef2f395a4412f033c9d082e596b04f8f970978-81-1782492302-1782474302
+https://YXdlc29tZQ.fubo18.com/espndeportes/mono.m3u8?token=180732e1b422f8e18cfcb85f1eef8a4d01901430-f-1782506702-1782488702
 #EXTINF:-1 tvg-id="tudn.usa" tvg-name="TUDN" tvg-logo="" group-title="USA",TUDN
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://qzv4jmsc.fubo18.com/tudn/mono.m3u8?token=4ba8d9144245e39b5ebcf8d151bfce0e19d1fe4c-af-1782492302-1782474302
-#EXTINF:-1 tvg-id="univisi.n.usa" tvg-name="Univisión" tvg-logo="" group-title="USA",Univisión
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTVLCOPT:http-referrer=https://la18hd.com/
-https://wp9xqedt.fubo18.com/univision/mono.m3u8?token=6653743e3c9a49fb3af9f7b4d55f9f6d8b4ef3c7-ba-1782492302-1782474302
+https://wp9xqedt.fubo18.com/tudn/mono.m3u8?token=1091880d6eb1dca45d535fd3eece03463465d40f-6d-1782506702-1782488702
 #EXTINF:-1 tvg-id="fox.sports.1.usa" tvg-name="Fox Sports 1" tvg-logo="" group-title="USA",Fox Sports 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://bGFuZQ.fubo18.com/foxsports1_usa/mono.m3u8?token=e29918dd090e9d3c9b4bade9e6f5b0220dee9a19-5d-1782492302-1782474302
+https://bgvnzw5k.fubo18.com/foxsports1_usa/mono.m3u8?token=6ecec7adbabff6321fdb0857df5812adde4579a8-f2-1782506702-1782488702
 #EXTINF:-1 tvg-id="fox.sports.2.usa" tvg-name="Fox Sports 2" tvg-logo="" group-title="USA",Fox Sports 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://tyg2mnl9.fubo18.com/foxsports2_usa/mono.m3u8?token=196a3cb4680b725892005f4eeff63693184e9aa2-40-1782492302-1782474302
+https://c2nvdxq.fubo18.com/foxsports2_usa/mono.m3u8?token=54d2132340ed6338e155707fc1ba3c8887eed0c2-e3-1782506702-1782488702
 #EXTINF:-1 tvg-id="universo.usa" tvg-name="Universo" tvg-logo="" group-title="USA",Universo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://a2lja3m.fubo18.com/universo/mono.m3u8?token=5afab06e6d02eb1659cf16b80cd98191b163e635-3e-1782492302-1782474302
+https://dglvz29s.fubo18.com/universo/mono.m3u8?token=7dc9e56b818c6bf967e57671d24baa7f0191c13e-3f-1782506702-1782488702
 #EXTINF:-1 tvg-id="bein.sports.espa.ol.usa" tvg-name="BeIN Sports Español" tvg-logo="" group-title="USA",BeIN Sports Español
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://cgxheq.fubo18.com/beinsportes/mono.m3u8?token=9fdc65e6ba58d60d0604c2c7b8a0f469f3a3b18e-b9-1782492302-1782474302
+https://wp9xqedt.fubo18.com/beinsportes/mono.m3u8?token=20158323c0eb87746bf7af015d018780753a1542-a6-1782506702-1782488702
 #EXTINF:-1 tvg-id="unim.s.usa" tvg-name="Unimás" tvg-logo="" group-title="USA",Unimás
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://qzv4jmsc.fubo18.com/unimas/mono.m3u8?token=c73a1f23f004788d629ba3b0a98e7909a5dbc08c-da-1782492302-1782474302
+https://ag9wzq.fubo18.com/unimas/mono.m3u8?token=b7d408b54c704c69b6c57d250d28baf1aa0f9083-1-1782506702-1782488702
 #EXTINF:-1 tvg-id="telemundo.usa" tvg-name="Telemundo" tvg-logo="" group-title="USA",Telemundo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://YXdlc29tZQ.fubo18.com/telemundo/mono.m3u8?token=690447b76b361d59907179af3ec9d1add06ff656-94-1782492302-1782474302
+https://cgxheq.fubo18.com/telemundo/mono.m3u8?token=08d09548f7222a520bb0af951e0a3d3e40bef799-85-1782506702-1782488702
 #EXTINF:-1 tvg-id="premiere.1.brasil" tvg-name="Premiere 1" tvg-logo="" group-title="BRASIL",Premiere 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://a2lja3m.fubo18.com/premiere1/mono.m3u8?token=f0c3555917f1f94ab97bc5406c98d442c1502a0e-db-1782492302-1782474302
-#EXTINF:-1 tvg-id="premiere.2.brasil" tvg-name="Premiere 2" tvg-logo="" group-title="BRASIL",Premiere 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTVLCOPT:http-referrer=https://la18hd.com/
-https://ag9wzq.fubo18.com/premiere2/mono.m3u8?token=52ff6373d886bc656f4289ba5886931d41c3a72c-ec-1782492302-1782474302
+https://tyg2mnl9.fubo18.com/premiere1/mono.m3u8?token=52803e37117acd4c6e9de363f262245c847f7940-11-1782506702-1782488702
 #EXTINF:-1 tvg-id="premiere.3.brasil" tvg-name="Premiere 3" tvg-logo="" group-title="BRASIL",Premiere 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://dglvz29s.fubo18.com/premiere3/mono.m3u8?token=45ab6e540065d2fdeb1a0b680add4e245768e396-7b-1782492302-1782474302
+https://tyg2mnl9.fubo18.com/premiere3/mono.m3u8?token=ee09397ad677b405352f6296059715bcf7f9bb47-b0-1782506702-1782488702
+#EXTINF:-1 tvg-id="premiere.4.brasil" tvg-name="Premiere 4" tvg-logo="" group-title="BRASIL",Premiere 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-referrer=https://la18hd.com/
+https://YXdlc29tZQ.fubo18.com/premiere4/mono.m3u8?token=5c4c608dc079ddb5832a4420b9a1cafc5ca2c3cc-3e-1782506702-1782488702
 #EXTINF:-1 tvg-id="premiere.5.brasil" tvg-name="Premiere 5" tvg-logo="" group-title="BRASIL",Premiere 5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://cgxheq.fubo18.com/premiere5/mono.m3u8?token=6c371aa3d3c6bb2b506250f56ed1ad22f97f59eb-58-1782492302-1782474302
+https://eWVz.fubo18.com/premiere5/mono.m3u8?token=cb48195846d52b4e21abd2ee815d0ba10ac843e2-1d-1782506702-1782488702
 #EXTINF:-1 tvg-id="premiere.6.brasil" tvg-name="Premiere 6" tvg-logo="" group-title="BRASIL",Premiere 6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://bgvnzw5k.fubo18.com/premiere6/mono.m3u8?token=3bd785c893f83f2d30c924dbdb11666e6bd11f4f-f7-1782492302-1782474302
+https://dglvz29s.fubo18.com/premiere6/mono.m3u8?token=54ad3b355b7f9dd66942b77ebbdff2052ebb8456-56-1782506702-1782488702
 #EXTINF:-1 tvg-id="premiere.7.brasil" tvg-name="Premiere 7" tvg-logo="" group-title="BRASIL",Premiere 7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://x4bnd7lq.fubo18.com/premiere7/mono.m3u8?token=279d379727a16041d7b3627b17a384ce70c97b81-62-1782492302-1782474302
-#EXTINF:-1 tvg-id="sportv.2.brasil" tvg-name="Sportv 2" tvg-logo="" group-title="BRASIL",Sportv 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTVLCOPT:http-referrer=https://la18hd.com/
-https://ym9yzq.fubo18.com/sportv2/mono.m3u8?token=825669c496c3a331fbb85d6de2e68e3bf759e878-4a-1782492302-1782474302
+https://qzv4jmsc.fubo18.com/premiere7/mono.m3u8?token=90ed2c54ed8812b686e140d5b5914f8e0354f328-d7-1782506702-1782488702
 #EXTINF:-1 tvg-id="sportv.3.brasil" tvg-name="Sportv 3" tvg-logo="" group-title="BRASIL",Sportv 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://rm8zcvk3.fubo18.com/sportv3/mono.m3u8?token=ce4492945c2414ba900b98c31e6a9f4a34237f5f-26-1782492302-1782474302
+https://a2lja3m.fubo18.com/sportv3/mono.m3u8?token=5de1aa0d5704c1da4f53277eba338ed9091f8a05-96-1782506702-1782488702
 #EXTINF:-1 tvg-id="dazn.1.españa" tvg-name="DAZN 1" tvg-logo="" group-title="ESPAÑA",DAZN 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://bmf0aw9u.fubo18.com/dazn1/mono.m3u8?token=d6b97659e49d7ad79622dc8fa135af7abbc5d51d-da-1782492302-1782474302
+https://b2ZmaWNpYWw.fubo18.com/dazn1/mono.m3u8?token=150dda79c839893fa074c67cd616fc076e8f6410-cf-1782506702-1782488702
 #EXTINF:-1 tvg-id="liga.de.campeones.2.españa" tvg-name="Liga de Campeones 2" tvg-logo="" group-title="ESPAÑA",Liga de Campeones 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://la18hd.com/
-https://dw5pdgvk.fubo18.com/ligadecampeones2/mono.m3u8?token=041b5af0a966adc8c1d42970ef3d27662fd51152-de-1782492302-1782474302
+https://agvyby.fubo18.com/ligadecampeones2/mono.m3u8?token=ec55d14429c1229544da8682d0dd900f62a1ab31-90-1782506702-1782488702
