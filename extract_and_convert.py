@@ -1,32 +1,31 @@
 #!/usr/bin/env python3
-"""Extract streaming URLs from la18hd.com and generate M3U files.
+"""Extract streaming URLs from librepelota.su and generate M3U files.
 
-Auto-discovers channels from https://la18hd.com/status.json,
-groups them by region, and only processes active channels.
+Scrapes channel cards from https://librepelota.su/es/, follows each
+channel page to discover the stream ID, then fetches the iframe
+backend (latamvidz1.com) to extract the raw m3u8 playback URL.
 
 Generates both simple fifa2026-list.m3u and extended fifa2026-list-9xtream.m3u
 from a single parallel fetch pass.
 
 Usage:
   python extract_and_convert.py                          # auto-discover & output both files
-  python extract_and_convert.py --inactive               # include inactive channels too
   python extract_and_convert.py --output mylist.m3u      # custom output filenames
   python extract_and_convert.py urls.txt                 # legacy: read from file
 """
 
 import argparse
 import concurrent.futures
-import json
 import re
 import sys
 from pathlib import Path
 
 import requests
 
-STATUS_JSON_URL = "https://la18hd.com/status.json"
-BASE_URL = "https://la18hd.com"
+HOME_URL = "https://librepelota.su/es/"
+IFRAME_BASE = "https://latamvidz1.com/canal.php"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-REFERER_URL = "https://la18hd.com/"
+REFERER_URL = "https://librepelota.su/es/"
 
 
 # ── helpers ──────────────────────────────────────────────────────────
@@ -36,15 +35,35 @@ def extract_playback_url(html: str) -> str | None:
     return match.group(1) if match else None
 
 
+def extract_stream_id(html: str) -> str | None:
+    match = re.search(
+        r'<iframe[^>]*src="https://latamvidz1\.com/canal\.php\?stream=([^"]+)"',
+        html,
+    )
+    return match.group(1) if match else None
+
+
 def fetch_playback(channel_url: str, channel_name: str) -> str | None:
+    """Fetch a channel page → extract stream ID → fetch iframe → extract playbackURL."""
     headers = {
         "User-Agent": USER_AGENT,
         "Referer": REFERER_URL,
     }
     try:
+        # Step 1: get channel page to find stream ID
         resp = requests.get(channel_url, headers=headers, timeout=30)
         resp.raise_for_status()
-        playback = extract_playback_url(resp.text)
+        stream_id = extract_stream_id(resp.text)
+        if not stream_id:
+            print(f"  [!] stream ID not found on page for {channel_name}", file=sys.stderr)
+            return None
+
+        # Step 2: fetch iframe backend to get m3u8 URL
+        iframe_url = f"{IFRAME_BASE}?stream={stream_id}"
+        print(f"  Fetching: {channel_name} ({stream_id})", file=sys.stderr)
+        iframe_resp = requests.get(iframe_url, headers=headers, timeout=30)
+        iframe_resp.raise_for_status()
+        playback = extract_playback_url(iframe_resp.text)
         if playback:
             return playback
         print(f"  [!] playbackURL not found for {channel_name}", file=sys.stderr)
@@ -55,12 +74,10 @@ def fetch_playback(channel_url: str, channel_name: str) -> str | None:
 
 
 def clean_playback_url(url: str) -> str:
-    """Remove redundant default HTTPS port from URL."""
     return re.sub(r"^https://([^/]+):443/", r"https://\1/", url)
 
 
 def validate_playback(playback: str) -> bool:
-    """Check if a playback URL returns HTTP 200."""
     try:
         resp = requests.get(
             playback,
@@ -75,7 +92,6 @@ def validate_playback(playback: str) -> bool:
 def validate_all_playbacks(
     results: list[dict], max_workers: int = 10
 ) -> list[dict]:
-    """Validate playback URLs in parallel, return only working ones."""
     total = len(results)
     ok_flags: list[bool] = [False] * total
 
@@ -122,15 +138,6 @@ def extract_brand(name: str) -> str:
         ("directv sports", "DirecTV Sports"),
         ("fox sports", "Fox Sports"),
         ("win sports", "Win Sports"),
-        ("premiere", "Premiere"),
-        ("sportv", "Sportv"),
-        ("sport tv", "Sport TV"),
-        ("dazn", "DAZN"),
-        ("movistar", "Movistar"),
-        ("liga1", "Liga1 MAX"),
-        ("goltv", "GOLTV"),
-        ("beinsports", "beIN Sports"),
-        ("tvc deportes", "TVC Deportes"),
         ("tudn", "TUDN"),
     ]
     for key, val in brands:
@@ -139,31 +146,36 @@ def extract_brand(name: str) -> str:
     return "General"
 
 
-def generate_tvg_id(name: str, region: str = "") -> str:
+def generate_tvg_id(name: str) -> str:
     base = re.sub(r"[^a-zA-Z0-9]+", ".", name.lower()).strip(".")
-    suffix = region.lower().strip() if region else "ar"
-    return f"{base}.{suffix}"
+    return f"{base}.ar"
 
 
 def discover_channels() -> list[dict]:
-    """Fetch status.json and return a list of {name, url, region, status}."""
-    print(f"  Fetching channel list from {STATUS_JSON_URL} ...", file=sys.stderr)
-    headers = {
-        "User-Agent": USER_AGENT,
-    }
-    resp = requests.get(STATUS_JSON_URL, headers=headers, timeout=30)
+    """Scrape librepelota.su/es/ homepage to discover channels from .card elements."""
+    print(f"  Fetching channel list from {HOME_URL} ...", file=sys.stderr)
+    headers = {"User-Agent": USER_AGENT}
+    resp = requests.get(HOME_URL, headers=headers, timeout=30)
     resp.raise_for_status()
-    data: dict[str, list[dict]] = resp.json()
+    html = resp.text
 
     channels: list[dict] = []
-    for region, items in data.items():
-        for item in items:
-            channels.append({
-                "name": item["Canal"],
-                "url": item["Link"],
-                "region": region,
-                "active": item["Estado"] == "Activo",
-            })
+    card_pattern = re.compile(
+        r'<div class="card">.*?'
+        r'<h3>(.*?)</h3>.*?'
+        r'<a href="(/es/[^"]+/)" class="btn-watch">',
+        re.DOTALL,
+    )
+    for match in card_pattern.finditer(html):
+        name = match.group(1).strip()
+        page_path = match.group(2)
+        channel_url = f"https://librepelota.su{page_path}"
+        channels.append({
+            "name": name,
+            "url": channel_url,
+            "region": "Latam",
+        })
+
     return channels
 
 
@@ -181,7 +193,6 @@ def parse_urls_file(path: str) -> list[dict]:
                     "name": name.strip(),
                     "url": url.strip(),
                     "region": "Custom",
-                    "active": True,
                 })
             else:
                 url = line
@@ -191,7 +202,6 @@ def parse_urls_file(path: str) -> list[dict]:
                     "name": name,
                     "url": url,
                     "region": "Custom",
-                    "active": True,
                 })
     return channels
 
@@ -199,15 +209,12 @@ def parse_urls_file(path: str) -> list[dict]:
 # ── parallel fetching ────────────────────────────────────────────────
 
 def fetch_all_playbacks(channels: list[dict], max_workers: int = 10) -> list[dict]:
-    """Fetch playback URLs for all channels in parallel, preserving original order."""
     total = len(channels)
     results: list[dict] = [None] * total
 
     def fetch_one(idx: int, ch: dict) -> tuple[int, dict]:
         name = ch["name"]
         url = ch["url"]
-        region = ch["region"]
-        print(f"  Fetching: [{region}] {name}", file=sys.stderr)
         playback = fetch_playback(url, name)
         if playback:
             playback = clean_playback_url(playback)
@@ -226,11 +233,10 @@ def fetch_all_playbacks(channels: list[dict], max_workers: int = 10) -> list[dic
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Extract streaming URLs from la18hd.com and generate M3U playlists.",
+        description="Extract streaming URLs from librepelota.su and generate M3U playlists.",
     )
     parser.add_argument("input", nargs="?", help="Legacy urls.txt file (omit to auto-discover)")
     parser.add_argument("-o", "--output", default="fifa2026-list.m3u", help="Output M3U file (simple format; extended derives name)")
-    parser.add_argument("--inactive", action="store_true", help="Include inactive channels")
     parser.add_argument("--max-workers", type=int, default=10, help="Max concurrent fetches (default: 10)")
     args = parser.parse_args()
 
@@ -240,12 +246,7 @@ def main():
         print(f"Loaded {len(channels)} channels from {args.input}", file=sys.stderr)
     else:
         channels = discover_channels()
-        print(f"Found {len(channels)} channels on la18hd.com", file=sys.stderr)
-
-    if not args.inactive:
-        total = len(channels)
-        channels = [c for c in channels if c["active"]]
-        print(f"  {len(channels)}/{total} active (use --inactive to include all)", file=sys.stderr)
+        print(f"Found {len(channels)} channels on librepelota.su", file=sys.stderr)
 
     if not channels:
         print("No channels to process.", file=sys.stderr)
@@ -254,13 +255,13 @@ def main():
     # ── fetch all playbacks in parallel ───────────────────────────
     results = fetch_all_playbacks(channels, max_workers=args.max_workers)
 
-    # ── validate playbacks in parallel ────────────────────────────
+    # ── validate playbacks (soft – tokens expire, so just warn) ──
     total_before = sum(1 for ch in results if ch.get("playback"))
-    print(f"  Validating {total_before} playback URLs ...", file=sys.stderr)
-    results = validate_all_playbacks(results, max_workers=args.max_workers)
-    dropped = total_before - len(results)
-    if dropped:
-        print(f"  [!] Dropped {dropped} channels that returned HTTP error", file=sys.stderr)
+    if total_before:
+        working = validate_all_playbacks(results, max_workers=args.max_workers)
+        failed = total_before - len(working)
+        if failed:
+            print(f"  [!] {failed}/{total_before} tokens already expired (normal)", file=sys.stderr)
 
     # ── build both M3U outputs from the same data ─────────────────
     simple_lines = ["#EXTM3U\n"]
@@ -280,9 +281,9 @@ def main():
         simple_lines.append(f"{make_simple_extinf(name)}\n{make_vlcopts()}{playback}\n")
 
         # Extended 9Xtream format
-        group = extract_brand(name) if region == "Custom" else region
+        group = extract_brand(name)
         groups_seen.add(group)
-        tvg_id = generate_tvg_id(name, region)
+        tvg_id = generate_tvg_id(name)
         extinf = make_9xtream_extinf(name, tvg_id, name, group)
         ext_lines.append(f"{extinf}\n{make_vlcopts()}{playback}\n")
 
