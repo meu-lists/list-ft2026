@@ -2,32 +2,32 @@
 #EXTINF:-1 tvg-id="tyc.sports.ar" tvg-name="TyC Sports" tvg-logo="" group-title="TyC Sports",TyC Sports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://librepelota.su/es/
-https://geqnt.vivolatamz.org/lb02/tycsports/index.m3u8?token=78cf9c24c4175b251900560d534da6912c311722-a3-1783198770-1783144770&ip=188.142.122.162
+https://emprw.vivolatamz.org/lb02/tycsports/index.m3u8?token=e036de51e60c73e316dec6d4042ff194cce87827-4c-1783199217-1783145217&ip=188.142.122.162
 #EXTINF:-1 tvg-id="directv.sports.ar" tvg-name="DirecTV Sports" tvg-logo="" group-title="DirecTV Sports",DirecTV Sports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://librepelota.su/es/
-https://dntaf.vivolatamz.org/lb01/dsports/index.m3u8?token=e35ee615c971423a70753c70ce3a8ddb690d4973-b1-1783198770-1783144770&ip=188.142.122.162
+https://izsup.vivolatamz.org/lb03/dsports/index.m3u8?token=5f26dc3304862aea93839502a1a43eb6171e7eb1-96-1783199217-1783145217&ip=188.142.122.162
 #EXTINF:-1 tvg-id="tnt.sports.ar" tvg-name="TNT Sports" tvg-logo="" group-title="TNT Sports",TNT Sports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://librepelota.su/es/
-https://chsuz.vivolatamz.org/lb01/tntsports/index.m3u8?token=05e56be2336087eee91d6c8dcc9b14dba1ebdec2-0a-1783198770-1783144770&ip=188.142.122.162
+https://xrpma.vivolatamz.org/lb06/tntsports/index.m3u8?token=1d537bb39bbf0212989f1e05bf98cd47e92df4a0-8f-1783199217-1783145217&ip=188.142.122.162
 #EXTINF:-1 tvg-id="espn.premium.ar" tvg-name="ESPN Premium" tvg-logo="" group-title="ESPN",ESPN Premium
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://librepelota.su/es/
-https://hcroq.vivolatamz.org/lb02/espnpremium/index.m3u8?token=d887d6991fe472d4739a00eee0d86377f9a13f1a-7a-1783198770-1783144770&ip=188.142.122.162
+https://pcrus.vivolatamz.org/lb04/espnpremium/index.m3u8?token=98b8699e6ba2258cccabd4a4274f43ee013720b2-25-1783199217-1783145217&ip=188.142.122.162
 #EXTINF:-1 tvg-id="espn.ar" tvg-name="ESPN" tvg-logo="" group-title="ESPN",ESPN
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://librepelota.su/es/
-https://nhciw.vivolatamz.org/lb04/espn/index.m3u8?token=0a32b2992ac2a46fb30bfb01b87173ad67bdc7a4-87-1783198770-1783144770&ip=188.142.122.162
+https://frika.vivolatamz.org/lb02/espn/index.m3u8?token=a200ddd269fd5b8eac2a17d50e23ca8bfcbd6493-a6-1783199217-1783145217&ip=188.142.122.162
 #EXTINF:-1 tvg-id="fox.sports.ar" tvg-name="Fox Sports" tvg-logo="" group-title="Fox Sports",Fox Sports
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://librepelota.su/es/
-https://emprw.vivolatamz.org/lb02/foxsports/index.m3u8?token=3b94d415fed504e0837b007eed55796f8ff14fbc-7c-1783198770-1783144770&ip=188.142.122.162
+https://udqni.vivolatamz.org/lb06/foxsports/index.m3u8?token=54df816fdff787072170d34ba874b87bc59c8f64-ea-1783199217-1783145217&ip=188.142.122.162
 #EXTINF:-1 tvg-id="tudn.ar" tvg-name="TUDN" tvg-logo="" group-title="TUDN",TUDN
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://librepelota.su/es/
-https://frika.vivolatamz.org/lb02/tudn_usa/index.m3u8?token=67be370a771e27ae6cb80f4383e93181f5c85de9-96-1783198770-1783144770&ip=188.142.122.162
+https://dntaf.vivolatamz.org/lb01/tudn_usa/index.m3u8?token=d1786f89ab3369675fdea5d4ce0079cccac80563-cd-1783199217-1783145217&ip=188.142.122.162
 #EXTINF:-1 tvg-id="win.sports.ar" tvg-name="Win Sports+" tvg-logo="" group-title="Win Sports",Win Sports+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTVLCOPT:http-referrer=https://librepelota.su/es/
-https://szrak.vivolatamz.org/lb05/winplus/index.m3u8?token=6bb39aa1996d09aa3625e765fdc47163325c7558-60-1783198770-1783144770&ip=188.142.122.162
+https://acvrt.vivolatamz.org/lb01/winplus/index.m3u8?token=100fd534be06231f0bac84262ccfbb4e7766b503-18-1783199217-1783145217&ip=188.142.122.162
