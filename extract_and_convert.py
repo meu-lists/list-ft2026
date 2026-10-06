@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Extract streaming URLs from librepelota.su and generate M3U files.
+"""Extract streaming URLs from pelotalibre.la and generate M3U files.
 
-Scrapes channel cards from https://librepelota.su/es/, follows each
+Scrapes channel pages and agenda from https://pelotalibre.la/, follows each
 channel page to discover the stream ID, then fetches the iframe
-backend (latamvidz1.com) to extract the raw m3u8 playback URL.
+backend (http://la18hd.su) to extract raw m3u8 playback URLs.
 
 Generates both simple fifa2026-list.m3u and extended fifa2026-list-9xtream.m3u
 from a single parallel fetch pass.
@@ -15,61 +15,101 @@ Usage:
 """
 
 import argparse
+import base64
 import concurrent.futures
 import re
 import sys
 from pathlib import Path
 
 import requests
+from bs4 import BeautifulSoup
 
-HOME_URL = "https://librepelota.su/es/"
-IFRAME_BASE = "https://latamvidz1.com/canal.php"
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-REFERER_URL = "https://librepelota.su/es/"
+HOME_URL = "https://pelotalibre.la/"
+AGENDA_URL = "https://pelotalibre.la/agenda.php"
+IFRAME_BASE = "http://la18hd.su/vivo/canales.php"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+REFERER_URL = "https://pelotalibre.la/"
 
 
 # ── helpers ──────────────────────────────────────────────────────────
 
 def extract_playback_url(html: str) -> str | None:
-    match = re.search(r'var playbackURL\s*=\s*"([^"]+)"', html)
-    return match.group(1) if match else None
+    match = re.search(r'var\s+playbackURL\s*=\s*["\']([^"\']+)["\']', html)
+    if match:
+        return match.group(1)
+    match_m3u8 = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', html)
+    return match_m3u8.group(0) if match_m3u8 else None
 
 
 def extract_stream_id(html: str) -> str | None:
-    match = re.search(
-        r'<iframe[^>]*src="https://latamvidz1\.com/canal\.php\?stream=([^"]+)"',
-        html,
-    )
-    return match.group(1) if match else None
+    match = re.search(r'<iframe[^>]*src=["\']([^"\']+)["\']', html)
+    if not match:
+        return None
+    iframe_src = match.group(1)
+    stream_match = re.search(r'stream=([^&"\']+)', iframe_src)
+    if stream_match:
+        return stream_match.group(1)
+    return iframe_src
 
 
-def fetch_playback(channel_url: str, channel_name: str) -> str | None:
+def fetch_playback(ch: dict) -> str | None:
     """Fetch a channel page → extract stream ID → fetch iframe → extract playbackURL."""
     headers = {
         "User-Agent": USER_AGENT,
         "Referer": REFERER_URL,
     }
-    try:
-        # Step 1: get channel page to find stream ID
-        resp = requests.get(channel_url, headers=headers, timeout=30)
-        resp.raise_for_status()
-        stream_id = extract_stream_id(resp.text)
-        if not stream_id:
-            print(f"  [!] stream ID not found on page for {channel_name}", file=sys.stderr)
-            return None
+    url = ch["url"]
+    name = ch["name"]
 
-        # Step 2: fetch iframe backend to get m3u8 URL
-        iframe_url = f"{IFRAME_BASE}?stream={stream_id}"
-        print(f"  Fetching: {channel_name} ({stream_id})", file=sys.stderr)
-        iframe_resp = requests.get(iframe_url, headers=headers, timeout=30)
-        iframe_resp.raise_for_status()
-        playback = extract_playback_url(iframe_resp.text)
+    try:
+        # If url is already an iframe backend or PHP stream
+        if "canales.php" in url or "global1.php" in url or "drm/" in url or url.endswith(".php"):
+            if "https://la18hd.su" in url:
+                url = url.replace("https://la18hd.su", "http://la18hd.su")
+            resp = requests.get(url, headers=headers, timeout=10)
+            resp.raise_for_status()
+            playback = extract_playback_url(resp.text)
+            if playback:
+                return playback
+
+        # Step 1: fetch channel HTML page
+        resp = requests.get(url, headers=headers, timeout=10)
+        resp.raise_for_status()
+        html = resp.text
+
+        # Step 2: fetch iframe backend
+        stream_id = ch.get("stream_id") or extract_stream_id(html)
+        if stream_id and not stream_id.startswith("http"):
+            iframe_url = f"{IFRAME_BASE}?stream={stream_id}"
+            print(f"  Fetching: {name} ({stream_id})", file=sys.stderr)
+            iframe_resp = requests.get(iframe_url, headers=headers, timeout=10)
+            iframe_resp.raise_for_status()
+            playback = extract_playback_url(iframe_resp.text)
+            if playback:
+                return playback
+
+        match_iframe = re.search(r'<iframe[^>]*src=["\']([^"\']+)["\']', html)
+        if match_iframe:
+            iframe_src = match_iframe.group(1)
+            if iframe_src.startswith("/"):
+                iframe_src = f"https://pelotalibre.la{iframe_src}"
+            elif iframe_src.startswith("https://la18hd.su"):
+                iframe_src = iframe_src.replace("https://la18hd.su", "http://la18hd.su")
+
+            iframe_resp = requests.get(iframe_src, headers=headers, timeout=10)
+            iframe_resp.raise_for_status()
+            playback = extract_playback_url(iframe_resp.text)
+            if playback:
+                return playback
+
+        playback = extract_playback_url(html)
         if playback:
             return playback
-        print(f"  [!] playbackURL not found for {channel_name}", file=sys.stderr)
+
+        print(f"  [!] playbackURL not found for {name}", file=sys.stderr)
         return None
     except requests.RequestException as e:
-        print(f"  [x] Error fetching {channel_url}: {e}", file=sys.stderr)
+        print(f"  [x] Error fetching {name} ({url}): {e}", file=sys.stderr)
         return None
 
 
@@ -131,11 +171,13 @@ def make_vlcopts() -> str:
 def extract_brand(name: str) -> str:
     name_lower = name.lower()
     brands = [
+        ("tv publica", "TV Publica"),
         ("tnt sports", "TNT Sports"),
         ("espn premium", "ESPN"),
         ("espn", "ESPN"),
         ("tyc sports", "TyC Sports"),
         ("directv sports", "DirecTV Sports"),
+        ("dsports", "DirecTV Sports"),
         ("fox sports", "Fox Sports"),
         ("win sports", "Win Sports"),
         ("tudn", "TUDN"),
@@ -152,29 +194,71 @@ def generate_tvg_id(name: str) -> str:
 
 
 def discover_channels() -> list[dict]:
-    """Scrape librepelota.su/es/ homepage to discover channels from .card elements."""
+    """Scrape pelotalibre.la homepage and agenda.php to discover channels."""
     print(f"  Fetching channel list from {HOME_URL} ...", file=sys.stderr)
-    headers = {"User-Agent": USER_AGENT}
-    resp = requests.get(HOME_URL, headers=headers, timeout=30)
-    resp.raise_for_status()
-    html = resp.text
-
+    headers = {"User-Agent": USER_AGENT, "Referer": REFERER_URL}
     channels: list[dict] = []
-    card_pattern = re.compile(
-        r'<div class="card">.*?'
-        r'<h3>(.*?)</h3>.*?'
-        r'<a href="(/es/[^"]+/)" class="btn-watch">',
-        re.DOTALL,
-    )
-    for match in card_pattern.finditer(html):
-        name = match.group(1).strip()
-        page_path = match.group(2)
-        channel_url = f"https://librepelota.su{page_path}"
-        channels.append({
-            "name": name,
-            "url": channel_url,
-            "region": "Latam",
-        })
+    seen_urls: set[str] = set()
+
+    # 1. Homepage channels
+    try:
+        resp = requests.get(HOME_URL, headers=headers, timeout=15)
+        resp.raise_for_status()
+        html = resp.text
+
+        canal_matches = re.findall(r'href=["\'](/canal/[^"\']+\.html)["\']', html)
+        name_map = {
+            "tycsports": "TyC Sports",
+            "directvsports": "DirecTV Sports",
+            "tvpublica": "TV Pública",
+            "espn": "ESPN",
+            "espnpremium": "ESPN Premium",
+            "tntsports": "TNT Sports",
+            "foxsports1": "Fox Sports",
+            "winplus": "Win Sports+",
+            "tudn": "TUDN",
+        }
+        for path in canal_matches:
+            full_url = f"https://pelotalibre.la{path}"
+            if full_url in seen_urls:
+                continue
+            seen_urls.add(full_url)
+            stream_name = path.replace("/canal/", "").replace(".html", "")
+            display_name = name_map.get(stream_name, stream_name.replace("_", " ").title())
+            channels.append({
+                "name": display_name,
+                "url": full_url,
+                "stream_id": stream_name,
+                "region": "Latam",
+            })
+    except requests.RequestException as e:
+        print(f"  [!] Failed to scrape {HOME_URL}: {e}", file=sys.stderr)
+
+    # 2. Agenda channels/matches
+    try:
+        resp_ag = requests.get(AGENDA_URL, headers=headers, timeout=15)
+        if resp_ag.status_code == 200:
+            soup = BeautifulSoup(resp_ag.text, "html.parser")
+            for a in soup.find_all("a"):
+                href = a.get("href", "")
+                text = a.get_text(strip=True)
+                if "?r=" in href:
+                    b64 = href.split("?r=")[1]
+                    try:
+                        decoded = base64.b64decode(b64).decode("utf-8")
+                        if decoded in seen_urls:
+                            continue
+                        seen_urls.add(decoded)
+                        clean_name = re.sub(r"Calidad.*", "", text).strip() if text else "Evento"
+                        channels.append({
+                            "name": clean_name or "Evento",
+                            "url": decoded,
+                            "region": "Agenda",
+                        })
+                    except Exception:
+                        pass
+    except Exception as e:
+        print(f"  [!] Failed to scrape agenda: {e}", file=sys.stderr)
 
     return channels
 
@@ -213,9 +297,7 @@ def fetch_all_playbacks(channels: list[dict], max_workers: int = 10) -> list[dic
     results: list[dict] = [None] * total
 
     def fetch_one(idx: int, ch: dict) -> tuple[int, dict]:
-        name = ch["name"]
-        url = ch["url"]
-        playback = fetch_playback(url, name)
+        playback = fetch_playback(ch)
         if playback:
             playback = clean_playback_url(playback)
         return idx, {**ch, "playback": playback}
@@ -233,7 +315,7 @@ def fetch_all_playbacks(channels: list[dict], max_workers: int = 10) -> list[dic
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Extract streaming URLs from librepelota.su and generate M3U playlists.",
+        description="Extract streaming URLs from pelotalibre.la and generate M3U playlists.",
     )
     parser.add_argument("input", nargs="?", help="Legacy urls.txt file (omit to auto-discover)")
     parser.add_argument("-o", "--output", default="fifa2026-list.m3u", help="Output M3U file (simple format; extended derives name)")
@@ -246,7 +328,7 @@ def main():
         print(f"Loaded {len(channels)} channels from {args.input}", file=sys.stderr)
     else:
         channels = discover_channels()
-        print(f"Found {len(channels)} channels on librepelota.su", file=sys.stderr)
+        print(f"Found {len(channels)} channels on pelotalibre.la", file=sys.stderr)
 
     if not channels:
         print("No channels to process.", file=sys.stderr)
@@ -261,7 +343,7 @@ def main():
         working = validate_all_playbacks(results, max_workers=args.max_workers)
         failed = total_before - len(working)
         if failed:
-            print(f"  [!] {failed}/{total_before} tokens already expired (normal)", file=sys.stderr)
+            print(f"  [!] {failed}/{total_before} tokens already expired or unavailable", file=sys.stderr)
 
     # ── build both M3U outputs from the same data ─────────────────
     simple_lines = ["#EXTM3U\n"]
